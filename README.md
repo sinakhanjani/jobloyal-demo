@@ -1,7 +1,7 @@
-# 🚀 Dubbel - All Home Services
+# 🚀 Jobloyal - All Home Services
 
 ## 🌍 Overview
-Dubbel is a real-time home services marketplace application, available for both iOS and Android as native applications. The platform connects users (customers) with service providers (jobbers), enabling seamless service booking and management. The backend is powered by Node.js with a PostgreSQL database, ensuring high scalability and efficiency.
+Jobloyal is a real-time home services marketplace application, available for both iOS and Android as native applications. The platform connects users (customers) with service providers (jobbers), enabling seamless service booking and management. The backend is powered by Node.js with a PostgreSQL database, ensuring high scalability and efficiency.
 
 ## 🛠️ Technologies Used
 - **📱 Frontend:** Native iOS (Swift) & Native Android (Kotlin)
