@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.raiting.UserRateFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                app:tint="#1E1E1E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/raiting"
+                android:textColor="#1E1E1E"
+                android:textSize="17sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_gradient">
+
+
+                <com.vks.RoundedImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="6dp"
+                    android:scaleType="centerCrop"
+                    app:rv_backgroundColor="#F5F9FF"
+                    app:rv_isOval="true"
+                    app:srcCompat="@drawable/sample_avatar" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="sinakhanjani"
+                android:textColor="#3B3B3B"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/idTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="sinakhanjani"
+                android:textColor="#999999"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratebar"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1"
+                android:theme="@style/RatingBar"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp" />
+
+            <com.vks.RoundFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="25dp"
+                android:padding="15dp"
+                app:rv_cornerRadius="14dp"
+                app:rv_strokeColor="#EAEAEA"
+                app:rv_strokeWidth="1dp">
+
+                <EditText
+                    android:id="@+id/commentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="top"
+                    android:hint="@string/write_your_comment_here"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textSize="16sp" />
+            </com.vks.RoundFrameLayout>
+
+            <ViewFlipper
+                android:id="@+id/loadingFlipper"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="25dp">
+
+                <com.vks.RoundButton
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:paddingVertical="13dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:rv_backgroundColor="@color/blue_500"
+                    app:rv_cornerRadius="100dp" />
+
+                <com.vks.RoundButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:paddingVertical="13dp"
+                    android:text="@string/submiting"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:rv_backgroundColor="@color/disabled_button_background"
+                    app:rv_cornerRadius="100dp" />
+
+            </ViewFlipper>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

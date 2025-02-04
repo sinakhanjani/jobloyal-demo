@@ -1,0 +1,49 @@
+.etag {
+  background: #EAEAEA;
+  padding: 11px 27px;
+  border-radius: 14px;
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 10px;
+  span.title {
+    color: #838383;
+    font-size: 16px;
+    display: block;
+    font-weight: 400;
+  }
+  i {
+    color: #2D2D2D;
+    font-weight: bold;
+    font-size: 36px;
+    font-style: normal;
+    &.small-value {
+      font-size: 26px;
+      font-weight: 500;
+    }
+  }
+}
+.ptag {
+  background: #1F6AE0;
+  padding: 11px 17px;
+  span.title {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  i {
+    color: #fff;
+    &.small-value {
+      font-size: 26px;
+      font-weight: 500;
+    }
+  }
+  i.subvalue {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  img {
+    display: inline;
+  }
+  .tag-content {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}

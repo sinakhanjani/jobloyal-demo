@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jobber.profile.authentication.AuthenticationFragment">
+
+    <View
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                android:background="?selectableItemBackgroundBorderless"
+                app:tint="#1E1E1E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/payment"
+                android:textColor="#1E1E1E"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ViewFlipper
+                android:id="@+id/waitingFlipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <com.vks.RoundButton
+                    android:id="@+id/saveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp"
+                    android:text="@string/save_cap"
+                    android:textColor="@color/blue_500"
+                    android:textSize="16sp"
+                    app:rv_cornerRadius="10dp" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    app:indicatorSize="20dp"
+                    app:trackThickness="1dp" />
+
+            </ViewFlipper>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:lineHeight="25dp"
+                android:paddingHorizontal="25dp"
+                android:text="@string/i_b_a_n_number"
+                android:textColor="#3F3F3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/lato_regular"
+                android:paddingHorizontal="25dp"
+                android:text="@string/your_i_b_a_n_card_should_have_the_same_name_that_you_are"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ibanET"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="12dp"
+                app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:inputType="text"
+                    android:lines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/lato_bold"
+                android:lineHeight="25dp"
+                android:paddingHorizontal="25dp"
+                android:text="@string/period_payment"
+                android:textColor="#3F3F3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/lato_regular"
+                android:lineHeight="20dp"
+                android:paddingHorizontal="25dp"
+                android:text="@string/your_money_in_your_wallet_pay_you_every_time_you_want_automatically"
+                android:textSize="14sp" />
+
+
+            <com.vks.RoundFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:rv_cornerRadius="100dp"
+                app:rv_strokeColor="#EBEBEB"
+                app:rv_strokeWidth="1dp">
+
+                <com.jobloyal.custom.views.SegmentView
+                    android:id="@+id/segmentPeriod"
+                    android:layout_width="300dp"
+                    android:layout_height="46dp"
+                    app:numSegments="3"
+                    app:selectedBackgroundColor="@color/blue_500"
+                    app:selectedIndex="0"
+                    app:selectedTextColor="#FFFFFF"
+                    app:separateLineColor="#FFFFFF"
+                    app:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:unselectedBackgroundColor="#00FFFFFF"
+                    app:unselectedTextColor="#6C6C6C" />
+            </com.vks.RoundFrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

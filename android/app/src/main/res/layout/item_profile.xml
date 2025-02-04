@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="27dp"
+    android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="#323232"
+            android:textSize="16sp"
+            android:text="Payment"
+            android:id="@+id/title"
+            android:layout_marginHorizontal="8dp"
+            android:drawableRight="@drawable/ic_go_to_next"
+            android:paddingVertical="19dp"
+            />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>

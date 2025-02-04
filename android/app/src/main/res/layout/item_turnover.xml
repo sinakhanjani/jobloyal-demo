@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.86"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/deposit"
+            android:textColor="#272727"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11/02/12"
+            android:textColor="#272727"
+            android:fontFamily="@font/lato_regular"
+            />
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1130.00"
+                android:textColor="#272727"
+                android:fontFamily="@font/lato_regular"
+                />
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHF"
+                android:textColor="#505050"
+                android:layout_marginLeft="2dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/lato_regular"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/statusImage"
+            app:srcCompat="@drawable/ic_turnover_status_success"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Status"
+            android:textColor="#272727"
+            android:fontFamily="@font/lato_regular"
+            />
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#F5F5F5"
+    android:layout_gravity="bottom"
+    />
+</FrameLayout>

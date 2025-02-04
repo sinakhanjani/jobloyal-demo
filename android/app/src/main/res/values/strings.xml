@@ -1,0 +1,403 @@
+<resources>
+    <string name="file_provider_name" translatable="false">.fileProvider</string>
+    <string name="select_capture_image">Please select or capture image</string>
+    <string name="app_name">Jobloyal</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="timebaseUnitType">Time Base</string>
+    <string name="numeric">Numeric</string>
+    <string name="pleaseComplete">please Complete all fields</string>
+    <string name="selectAvatar">please choose an avatar for your self</string>
+    <string name="selectUnitType">please select one of type of units</string>
+    <string name="typePriceGreaterThanZero">please type price of service greater than zero</string>
+    <string name="selectUnit">please select one of units or type your custom unit</string>
+    <string name="per">per</string>
+    <string name="hour">hour</string>
+    <string name="mins">min</string>
+    <string name="nServices">%s Services</string>
+    <string name="lastOnlineAt">Last online at %s</string>
+    <string name="todayOnlineAt">today be online at %s</string>
+    <string name="notBeenOnlineToday">job not been active today</string>
+    <string name="atLeastOneSelection">you should at least accept one service of this request</string>
+    <string name="routingTO">Routing to %s</string>
+    <string name="cannotToBack">You Cannot go back till this request completely finished or canceled</string>
+    <string name="selectBirthday">Select Your Birthday</string>
+    <string name="commentTitle">about %s</string>
+    <string name="defaultDescriptionUpdate">update of new version application is available and you can download it now</string>
+
+    <string-array name="titleOfIntros">
+        <item>Are you looking for services?</item>
+        <item>Do you want to provide a service?</item>
+    </string-array>
+
+    <string-array name="contentOfIntros">
+        <item>- Get your house work done with ease\n- Find a service provider close to you\n- One app, tenths of services in your area</item>
+        <item>- Gain clients more easily in your area\n- Increase your visibility and boost your income\n- Join Jobbers’ network to provide your services safely</item>
+    </string-array>
+    <!---JOBBER -->
+    <string name="resendWithTimer">Resend (%d)</string>
+    <string name="resend">Resend</string>
+    <string name="exit">Exit</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="exitSubTitle">are you sure to exiting from app?</string>
+    <string name="exitDescription">every time you can comeback to app and you\'r data is protected by jobloyal</string>
+    <string name="deleteAccountSubTitle">are you sure to deleting your account?</string>
+    <string name="deleteAccountDescription">if you delete your account all history will be deleted and can not be recoverd</string>
+    <string name="jobs">Jobs</string>
+    <string name="requests">Requests</string>
+    <string name="history">Report</string>
+    <string name="profile">Profile</string>
+    <string name="editProfile">EDIT PROFILE</string>
+    <string name="selectYourSkillCategory">Select Your Skill’s Category</string>
+    <string name="selectYourSkill">Select Your Skill</string>
+    <string name="rejectWithTimer">Reject (%s)</string>
+    <string name="acceptWithPrice">Next (%s)</string>
+    <string name="next">Next</string>
+    <string name="reject">Reject</string>
+    <string name="holdToCancel">please hold \'Cancel\' Button to cancel request</string>
+    <string name="startService">i Started Service(s)</string>
+    <string name="finishService">i Finished Service(s)</string>
+    <string name="arrivalTime">Arrival Time</string>
+    <string name="arrivedTime">Arrived Time</string>
+    <string name="startedTime">Started Time</string>
+    <string name="startedService">Started Service</string>
+    <string name="accepted">accepted</string>
+    <string name="rejected">rejected</string>
+    <string name="lastUpdatedAt">Last Update at %s</string>
+    <string name="updateYourLocation">Please update your location to users near you find you</string>
+    <string name="turnOnYourGPS">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="fromNComment">From %s</string>
+    <string name="workCount">%s Worked</string>
+    <string name="rateAndComment">%s (%s comments)</string>
+    <string name="servicesSelectedCount">%d Service(s) select to reserve</string>
+    <string name="chooseArrivalTime">please select arrival time to continue</string>
+    <string name="askMr">Ask %s</string>
+    <string name="askMrContent">Ask %s to open the jobloyal and verify your job to get the money on your wallet</string>
+    <string name="cancelWithTimer">Cancel (%s)</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="deleteServiceInJobSubtitle">are you sure delete %s from your job?</string>
+    <string name="deleteServiceInJobDescription">deleting this service cause all comment about it and rate whole deleted do you want to continue?</string>
+    <string name="payForAnHour">Pay for an Hour</string>
+    <string name="wrongIBAN">Please Write Correct IBAN Number</string>
+    <string name="daily">Every Other Day</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yourAccountFinitelySuspended">your account has been suspended till %s because %s</string>
+    <string name="yourAccountFinitelySuspendedWithoutReason">your account has been suspended till %s</string>
+    <string name="yourAccountInfinitelySuspended">your account has been suspended because %s</string>
+    <string name="yourAccountInfinitelySuspendedWithoutReason">your account has been suspended</string>
+    <string name="localNotificationContent">If you want to be a jobloyal service recipient today, you need to switch jobs online</string>
+    <string name="localNotificationTitle">Get your job online</string>
+    <string-array name="profileOptions">
+        <item>Payment</item>
+        <item>Notifications</item>
+        <item>Edit Profile</item>
+        <item>Turnover</item>
+        <item>Support</item>
+        <item>Terms and Conditions</item>
+        <item>About Us</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <!--USER -->
+    <string name="titleOfCategoryBox">What Work Do you Need?</string>
+    <string name="titleOfServiceSearch">Services Result</string>
+    <string name="nRequestedServices">%s services</string>
+    <string name="cancelRequestUserSubTitle">are you sure cancel jobber?</string>
+    <string name="cancelRequestUserContent">if you cancel this jobber may couldn\'t take jobber or it was hard, you sure?</string>
+    <string name="rateIsRequire">you should at least rate the jobber without comment</string>
+    <string name="reservedJobberFornMin">we reserved jobber for %d minute</string>
+    <string-array name="userProfileOptions">
+        <item>Reserved Services</item>
+        <item>Canceled Services</item>
+        <item>Edit Profile</item>
+        <item>Support</item>
+        <item>Terms and Conditions</item>
+        <item>About Us</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!--ERROR MESSAGES -->
+    <string name="error401_title">you not authorized yet</string>
+    <string name="error401_description">you have not authorized may your token has suspend</string>
+    <string name="error500_title">an internal error occurred</string>
+    <string name="error500_description">we are solving this error as soon as possible</string>
+    <string name="error404_title">not found</string>
+    <string name="error404_description">this request not found</string>
+    <string name="error_internet_lose_title">internet has lose</string>
+    <string name="error_internet_lose_description">please check your connection and try again</string>
+
+    <string name="error_code_id_should_not_empty">id should be more than 3 character</string>
+    <string name="error_all_field_should_complete">all fields should complete</string>
+    <string name="error_accept_terms">please accept terms and condition to continue</string>
+    <string name="error_id_should_complete">please choose an correct id</string>
+
+
+
+
+    <!-- xml file -->
+    <string name="no_connection">NO CONNECTION</string>
+    <string name="please_check_you_connection_and_try_again">Please check you connection and try again</string>
+    <string name="try_again">Try Again</string>
+    <string name="your_request_sent">your request sent</string>
+    <string name="wait">Wait</string>
+    <string name="jobloyal_sent_your_request_to_the_jobber_please_wait_until_jobber_answer_the_request">jobloyal sent your request to the jobber please wait until jobber answer the request</string>
+    <string name="cancel_the_request">Cancel The Request</string>
+    <string name="your_account_is_suspend">Your account is suspend</string>
+    <string name="loading_detail">loading detail...</string>
+    <string name="your_i_dentity">Your IDentity</string>
+    <string name="raiting">Rating</string>
+    <string name="write_your_comment_here">write your comment here…</string>
+    <string name="submit">Submit</string>
+    <string name="submiting">Submitting…</string>
+    <string name="profile_cap">PROFILE</string>
+    <string name="wallet">Wallet</string>
+    <string name="chf">CHF</string>
+
+
+    <!-- users -->
+    <string name="find_my_jobs_here">Find My Jobs Here</string>
+    <string name="send_request">SEND REQUEST</string>
+    <string name="payable_amount">payable amount:</string>
+    <string name="total_pay">Total Pay</string>
+    <string name="sum_and_commission">sum + commission</string>
+    <string name="sum_and_commission_cap">Sum + Commission</string>
+    <string name="what_do_this_step">What do this step?</string>
+    <string name="step_pay_description">in this step you should choose amount of each services that have an unit like a painting taht have meter unit?</string>
+
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="please_enter_your_first_name">Please Enter your first name</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="save_cap">SAVE</string>
+
+    <string name="comments">COMMENTS</string>
+
+    <string name="what_work_do_you_need">What Work Do You Need?</string>
+    <string name="whats_your_job">What’s your job?</string>
+
+    <string name="turnover">TURNOVER</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="not_found_any_turnover">not found any turnover</string>
+
+    <string name="terms_and_condition">TERMS AND CONDITION</string>
+
+    <string name="messages">MESSAGES</string>
+
+    <string name="accepted_services">Accepted Services</string>
+    <string name="total_income">Total Income</string>
+    <string name="sum_of_accepted_services_price">sum of accepted services’ price</string>
+    <string name="rejected_services">Rejected Services</string>
+
+    <string name="send_message">SEND MESSAGE</string>
+    <string name="your_message_has_been_replaied_maximum_3_days_later_after_your_sending">your message has been replaied maximum 3 days later after your sending.</string>
+    <string name="enter_the_subject">Enter the Subject</string>
+    <string name="description">Description</string>
+    <string name="send">SEND</string>
+
+    <string name="add_new_service">ADD NEW SERVICE</string>
+    <string name="enter_titles_service">Enter Title\'s Service</string>
+    <string name="eg_cleaning_the_garden">e.g. Cleaning the Garden</string>
+
+    <string name="reserved_services">RESERVED SERVICES</string>
+
+    <string name="call">Call</string>
+    <string name="based_on">Based On</string>
+    <string name="time">Time</string>
+    <string name="paied">Paied</string>
+    <string name="total_time">Total Time</string>
+    <string name="income">Income</string>
+    <string name="i_arrive_near_home">i Arrive Near Home</string>
+
+    <string name="enter_zip_code">Enter zip code</string>
+    <string name="choose_an_id_for_yourself">Choose an id for yourself</string>
+    <string name="i_agree_to_the">I agree to the</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+
+    <string name="phone_number">Phone Number</string>
+    <string name="we_need_to_authorize_phone_number">We need to authorize phone number</string>
+    <string name="please_enter_your_phone_number">Please Enter your phone number</string>
+
+    <string name="cleaning_the_garden">Cleaning The Garden</string>
+    <string name="unit_type">Unit Type</string>
+    <string name="select">Select</string>
+    <string name="unit_title">Unit Title</string>
+    <string name="price">Price</string>
+    <string name="add">Add</string>
+    <string name="pay_attention_add_service">pay attention: that when you choose unit type numberic the user have to select amount of service per unit but in timic type user only select the service and pay after finished your work </string>
+
+    <string name="the_message_box_is_empty">The Message Box is Empty</string>
+    <string name="create_new_ticket">Create New Ticket</string>
+    <string name="verification">Verification</string>
+    <string name="change">(change)</string>
+    <string name="enter_sixdigit_code_was_sent">Enter six-digit code was sent</string>
+
+    <string name="saturday_12_july">Saturday 12 July</string>
+    <string name="your_current_location">Your Current Location</string>
+    <string name="loading">Loading...</string>
+    <string name="update_location">Update Location</string>
+
+    <string name="not_any_jobber_found">Not Any Jobber Found</string>
+
+    <string name="for_pay">for Pay</string>
+    <string name="jobber_waiting_description">you can’t answer other request until the user accept or don’t answer for three minutes</string>
+
+    <string name="notification_cap">NOTIFICATION</string>
+    <string name="save">Save</string>
+    <string name="notification_setting_description">When someone reserve you, the notification send you and here you can disable/enable it</string>
+    <string name="sms">SMS</string>
+    <string name="notification">Notification</string>
+    <string name="alarm_to_be_online">Alarm to be online</string>
+    <string name="its_every_day_at_0700_am">it\'s every day at 07:00 am</string>
+
+    <string name="request_box_is_empty">Request Box is Empty</string>
+    <string name="you_have_not_any_request">You have not any request</string>
+
+    <string name="report">Report</string>
+    <string name="the_report_box_is_empty">The Report Box is Empty</string>
+
+
+    <string name="you_not_authorized_yet_click_here_to_authorize_you">You not Authorized yet, Click Here to Authorize you</string>
+    <string name="please_wait_until_verify_your_documents">Please Wait until verify your documents</string>
+    <string name="compete_your_profile">COMPETE YOUR PROFILE</string>
+    <string name="credit">Credit</string>
+    <string name="your_document_has_been_rejected_please_try_a_new_document">Your Document has been rejected, please try a new document</string>
+
+    <string name="payment">PAYMENT</string>
+    <string name="i_b_a_n_number">IBAN Number</string>
+    <string name="your_i_b_a_n_card_should_have_the_same_name_that_you_are">Your IBAN card should have the same name that you are</string>
+    <string name="period_payment">Period Payment</string>
+    <string name="your_money_in_your_wallet_pay_you_every_time_you_want_automatically">your money in your wallet pay you every time you want automatically.</string>
+
+
+    <string name="may_after_jobber_cancel_your_request">may after jobber cancel your request</string>
+    <string name="receive_time">receive time:</string>
+    <string name="about_me">About Me</string>
+    <string name="services">Services</string>
+    <string name="services_per_hour">Services (per hour)</string>
+    <string name="only_1_service_can_be_choosen">only 1 service can be chosen</string>
+    <string name="more_comments">More Comments</string>
+    <string name="next_cap">NEXT</string>
+    <string name="next_and_pay">NEXT AND PAY</string>
+    <string name="total">Total:</string>
+    <string name="call_cap">CALL</string>
+    <string name="doing">Doing...</string>
+    <string name="verify_pay_the_price_to_jobber">Verify (pay the price to jobber)</string>
+
+    <string name="complete_profile">COMPLETE PROFILE</string>
+    <string name="update_your_avatar">Update Your Avatar</string>
+    <string name="enter_your_email">Enter your  email</string>
+    <string name="please_enter_address">Please Enter address</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="about_you__user_read_it">About you (User read it)</string>
+    <string name="delete_account">Delete Account</string>
+
+    <string name="done_jobs">Done Jobs</string>
+    <string name="all_requests">All Requests</string>
+    <string name="comments_cap">COMMENTS</string>
+    <string name="jobber_page_add_service_description">you should add every service that you can do in this job like washing the car in place for every body that select “cleaning service” as his job.</string>
+    <string name="add_a_service">Add a Service</string>
+
+    <string name="price_per_unit">price per unit:</string>
+    <string name="total_lowercase">total:</string>
+
+    <string name="deposit">Deposit</string>
+
+    <string name="serviced_by">serviced by:</string>
+    <string name="reserved_at">reserved at:</string>
+
+    <string name="accepted_tag">Accepted</string>
+    <string name="paid_tag">Paid</string>
+
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+
+    <string name="services_and_comments">Services and Comments</string>
+    <string name="available">Available</string>
+
+    <string name="add_services_to_find_you_every_body">add services to find you every body</string>
+
+    <string name="who_are_you">WHO ARE YOU?</string>
+    <string name="you_can_register_as_a_jobber_to_access_all_job_near_you_or_register_as_user_to_left_your_works_to_another">you can register as a jobber to access all job near you, or register as user to left your works to another</string>
+    <string name="login__register_as_user">Login / Register as User</string>
+    <string name="user_who_need_to_help_and_repair_their_tools_like_dishwasher">user who need to help and repair their tools like dishwasher.</string>
+    <string name="login__register_as_jobber">Login / Register as Jobber</string>
+    <string name="jobber_who_can_do_some_thing_like_electersite_or_etc">jobber who can do some thing like electrician or etc.</string>
+
+    <string name="invoice">INVOICE</string>
+    <string name="n_e_x_t_amp_p_a_y">NEXT &amp; PAY</string>
+
+
+    <string name="estimated_arrival_time">Estimated Arrival Time</string>
+    <string name="arrival_time_to_show_the_user">Arrival time to show the user</string>
+    <string name="routing_to_rue_de_rivoli">Routing to Rue de Rivoli</string>
+
+    <string name="add_new_job">ADD NEW JOB</string>
+
+    <string name="authentication">AUTHENTICATION</string>
+    <string name="please_upload_your_national_identity_cards_driving_licences_passports_residence_permits">Please upload your national identity cards, driving licences, passports, residence permits</string>
+    <string name="take_a_picture">Take a Picture</string>
+    <string name="or">OR</string>
+    <string name="upload_from_gallery">Upload From Gallery</string>
+    <string name="upload">Upload</string>
+
+    <string name="oops">Oops</string>
+    <string name="ok">OK</string>
+    <string name="from_0">From 0</string>
+
+    <string name="sending">SENDING...</string>
+    <string name="next_and_request">NEXT &amp; REQUEST</string>
+
+
+
+    <!-- Errors -->
+    <string name="error_code_401">user not authenticate with token</string>
+    <string name="error_code_403">user has been suspend</string>
+    <string name="error_code_404">not found</string>
+    <string name="error_code_500">an error occurred on server side</string>
+    <string name="error_code_101">something went wrong!</string>
+    <string name="error_code_102">Invalid input for updates</string>
+    <string name="error_code_103">authentication code was expired in 120 seconds or incorrect code</string>
+    <string name="error_code_104">code must have 6 digit</string>
+    <string name="error_code_105">no any user found</string>
+    <string name="error_code_106">phone number must be 11 characters</string>
+    <string name="error_code_107">id already exist</string>
+    <string name="error_code_108">only can contain a-z and numbers and underline</string>
+    <string name="error_code_109">password is incorrect</string>
+    <string name="error_code_110">parameter id is require</string>
+    <string name="error_code_111">all parameter should be passed</string>
+    <string name="error_code_112">emailIsInvalid</string>
+    <string name="error_code_113">unit title should have less character</string>
+    <string name="error_code_114">your payment is success and record to mongodb</string>
+    <string name="error_code_115">not found any request</string>
+    <string name="error_code_116">Jobber is not available now</string>
+    <string name="error_code_117">Jobber is busy now</string>
+    <string name="error_code_118">User have a request that do not complete yet</string>
+    <string name="error_code_119">Location Of Jobber Should update before being online on his job</string>
+    <string name="error_code_120">you can not access this operator until you are unauthorized</string>
+    <string name="error_code_121">jobber has not this job</string>
+    <string name="error_code_122">this job for this jobber is inactive</string>
+    <string name="error_code_123">one service can only one time added to a job of jobber and this service already added to jobber</string>
+    <string name="error_code_124">All Services in One Request should one type (either Numeric or TimeBase)</string>
+    <string name="error_code_125">Your IBAN is Invalid</string>
+    <string name="error_code_126">you can only one time delete your account in a day</string>
+    <string name="error_code_127">the jobber already registered</string>
+    <string name="error_code_128">job should at least one service to be online</string>
+    <string name="error_code_0">unknown error</string>
+
+    <string name="all_home_services">All Home Services</string>
+    <string name="about_us">The platform connecting professionals with clients in their area. We offer an array of home services with close radius from your place. Just browse the service needed to find out the professionals near you. JobLoyal creating a new way to provide home services solutions.</string>
+
+    <string name="add_new_service_please_be_online_title">Be online</string>
+    <string name="add_new_service_please_be_online_content">You have added a new service to %s. To receive new requests, please tap the online button.</string>
+
+    <string name="add_new_job_please_be_online_title">Be online</string>
+    <string name="add_new_job_please_be_online_content">You have added a new job called %s. To receive new requests, please tap the online button.</string>
+
+</resources>

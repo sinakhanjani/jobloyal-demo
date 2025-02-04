@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jobber.main.jobs.JobsFragment">
+
+    <View
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/ic_linear_logo" />
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/saturday_12_july" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.vks.RoundFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_backgroundColor="@color/blue_700"
+                app:rv_cornerRadius="12dp">
+
+                <com.vks.RoundedImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:adjustViewBounds="true"
+                    app:rv_cornerRadius="12dp"
+                    app:srcCompat="@drawable/ic_jobber_location" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="@string/your_current_location"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/addressTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:alpha="0.84"
+                        android:fontFamily="@font/lato_regular"
+                        android:lineHeight="22dp"
+                        android:text="@string/loading"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lastUpdateTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="17dp"
+                        android:alpha="0.84"
+                        android:fontFamily="@font/lato_regular"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </com.vks.RoundFrameLayout>
+
+            <com.dd.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-30dp"
+                app:sl_cornerRadius="100dp"
+                app:sl_dx="0dp"
+                app:sl_dy="1dp"
+                app:sl_shadowColor="#2C000000"
+                app:sl_shadowRadius="6dp">
+
+                <com.vks.RoundLinearLayout
+                    android:id="@+id/updateLocationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    app:rv_backgroundColor="#fff"
+                    app:rv_cornerRadius="100dp"
+                    app:rv_isRippleEnable="true">
+
+                    <ViewFlipper
+                        android:id="@+id/updatLoading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_refresh"
+                            app:tint="#484848" />
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:indeterminate="true"
+                            android:progress="79"
+                            app:indicatorColor="#484848"
+                            app:indicatorInset="0dp"
+                            app:indicatorSize="15dp"
+                            app:trackThickness="2dp" />
+
+                    </ViewFlipper>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="6dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="@string/update_location"
+                        android:textColor="#414141" />
+                </com.vks.RoundLinearLayout>
+            </com.dd.ShadowLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1">
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/jobPicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dsv_orientation="horizontal"
+                tools:listitem="@layout/item_jobber_jobs" />
+            <FrameLayout
+                android:visibility="invisible"
+                android:id="@+id/swipe_helper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C6FFFFFF"
+                android:paddingHorizontal="30dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_left_arrow_paging"
+                    android:layout_gravity="left|center_vertical"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_swipe"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+                <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_right_arrow_paging"
+                android:layout_gravity="right|center_vertical"
+                />
+
+            </FrameLayout>
+        </FrameLayout>
+        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+            android:id="@+id/spring_dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="0"
+            app:dampingRatio="0.5"
+            app:dotsColor="@color/blue_700"
+            app:dotsSize="8dp"
+            app:dotsSpacing="2dp"
+            app:dotsStrokeColor="#E8E8E8"
+            app:dotsStrokeWidth="4dp"
+            app:stiffness="300" />
+    </LinearLayout>
+</LinearLayout>

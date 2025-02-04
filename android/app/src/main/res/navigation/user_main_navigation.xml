@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_main_navigation"
+    app:startDestination="@id/userCategoryFragment">
+
+    <fragment
+        android:id="@+id/userCategoryFragment"
+        android:name="com.jobloyal.user.main.category.UserCategoryFragment"
+        android:label="UserCategoryFragment" >
+        <action
+            android:id="@+id/action_userCategoryFragment_to_userSubCategoryFragment"
+            app:destination="@id/userSubCategoryFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_right"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_left" />
+        <action
+            android:id="@+id/action_userCategoryFragment_to_jobbersListFragment"
+            app:destination="@id/jobbersListFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_userCategoryFragment_to_userLiveRequestFragment"
+            app:destination="@id/userLiveRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSubCategoryFragment"
+        android:name="com.jobloyal.user.main.category.subcategory.UserSubCategoryFragment"
+        android:label="UserSubCategoryFragment" >
+        <action
+            android:id="@+id/action_userSubCategoryFragment_to_jobbersListFragment"
+            app:destination="@id/jobbersListFragment"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+        <argument
+            android:name="categories"
+            app:argType="com.jobloyal.jobber.model.category.CategoryModel[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="categoryTitle"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="catId"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_userSubCategoryFragment_self"
+            app:destination="@id/userSubCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobbersListFragment"
+        android:name="com.jobloyal.user.main.jobbers.JobbersListFragment"
+        android:label="jobbers_list_fragment"
+        tools:layout="@layout/jobbers_list_fragment" >
+        <argument
+            android:name="jobId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="serviceId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument android:name="jobTitle"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLiveRequestFragment"
+        android:name="com.jobloyal.user.main.live.UserLiveRequestFragment"
+        android:label="user_live_request_fragment"
+        tools:layout="@layout/user_live_request_fragment" />
+    <fragment
+        android:id="@+id/userSuspendFragment"
+        android:name="com.jobloyal.user.suspend.UserSuspendFragment"
+        android:label="UserSuspendFragment" />
+</navigation>

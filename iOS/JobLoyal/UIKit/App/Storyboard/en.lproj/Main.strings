@@ -1,0 +1,198 @@
+
+/* Class = "UITableViewSection"; headerTitle = "GENDER"; ObjectID = "1LW-7N-leX"; */
+"1LW-7N-leX.headerTitle" = "GENDER";
+
+/* Class = "UITextField"; placeholder = "Enter your last name"; ObjectID = "1Z5-fh-Aaa"; */
+"1Z5-fh-Aaa.placeholder" = "Enter your last name";
+
+/* Class = "UITableViewSection"; headerTitle = "EMAIL"; ObjectID = "1bd-jQ-YzO"; */
+"1bd-jQ-YzO.headerTitle" = "EMAIL";
+
+/* Class = "UITableViewSection"; headerTitle = "DESCRIPTION"; ObjectID = "21D-pv-cxi"; */
+"21D-pv-cxi.headerTitle" = "DESCRIPTION";
+
+/* Class = "UITableViewController"; title = "Comments"; ObjectID = "2V8-AW-PRH"; */
+"2V8-AW-PRH.title" = "Comments";
+
+/* Class = "UILabel"; text = "We need to authorize phone number"; ObjectID = "40T-s6-ZJZ"; */
+"40T-s6-ZJZ.text" = "We need to authorize phone number";
+
+/* Class = "UILabel"; text = "Enter six-digit code was sent"; ObjectID = "4GT-po-oiH"; */
+"4GT-po-oiH.text" = "Enter six-digit code was sent";
+
+/* Class = "UITableViewSection"; headerTitle = "TERM AND CONDITION"; ObjectID = "628-2f-9Yl"; */
+"628-2f-9Yl.headerTitle" = "TERM AND CONDITION";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "6xF-UA-8Wr"; */
+"6xF-UA-8Wr.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "I agree to the Terms and Conditions"; ObjectID = "9i1-42-4gK"; */
+"9i1-42-4gK.text" = "I agree to the Terms and Conditions";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "9t0-P1-D66"; */
+"9t0-P1-D66.text" = "Phone Number";
+
+/* Class = "UILabel"; text = "All Home Services"; ObjectID = "CSJ-h7-BcE"; */
+"CSJ-h7-BcE.text" = "All Home Services";
+
+/* Class = "UIButton"; normalTitle = "Answered"; ObjectID = "EmA-Bv-wX8"; */
+"EmA-Bv-wX8.normalTitle" = "Answered";
+
+/* Class = "UILabel"; text = "Login / Register as Jobber"; ObjectID = "GuF-dt-9o2"; */
+"GuF-dt-9o2.text" = "Login / Register as Jobber";
+
+/* Class = "UITableViewSection"; headerTitle = "ADDRESS"; ObjectID = "HOO-qS-ZRR"; */
+"HOO-qS-ZRR.headerTitle" = "ADDRESS";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Hlg-cN-5Jg"; */
+"Hlg-cN-5Jg.normalTitle" = "Next";
+
+/* Class = "UITextField"; placeholder = "Enter your zipcode"; ObjectID = "K8y-kT-uXZ"; */
+"K8y-kT-uXZ.placeholder" = "Enter your zipcode";
+
+/* Class = "UINavigationItem"; title = "Your IDentity"; ObjectID = "KRI-a3-QNB"; */
+"KRI-a3-QNB.title" = "Your IDentity";
+
+/* Class = "UILabel"; text = "I agree to the Terms and Conditions"; ObjectID = "McL-ld-Mcv"; */
+"McL-ld-Mcv.text" = "I agree to the Terms and Conditions";
+
+/* Class = "UITableViewSection"; headerTitle = "LAST NAME"; ObjectID = "Md4-9V-N9s"; */
+"Md4-9V-N9s.headerTitle" = "LAST NAME";
+
+/* Class = "UINavigationItem"; title = "WHO ARE YOU"; ObjectID = "Mny-dH-XUO"; */
+"Mny-dH-XUO.title" = "WHO ARE YOU";
+
+/* Class = "UINavigationItem"; title = "Phone Number"; ObjectID = "NVj-La-yTv"; */
+"NVj-La-yTv.title" = "Phone Number";
+
+/* Class = "UITableViewSection"; headerTitle = "NAME"; ObjectID = "NmN-Vv-2eR"; */
+"NmN-Vv-2eR.headerTitle" = "NAME";
+
+/* Class = "UILabel"; text = "Login / Register as User"; ObjectID = "Nyk-KW-1Su"; */
+"Nyk-KW-1Su.text" = "Login / Register as User";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "O49-oa-ezu"; */
+"O49-oa-ezu.normalTitle" = "Send";
+
+/* Class = "UINavigationItem"; title = "Your IDentity"; ObjectID = "OGy-Xo-qHf"; */
+"OGy-Xo-qHf.title" = "Your IDentity";
+
+/* Class = "UILabel"; text = "You can register as a jobber to access all job near you, or register as user to left your works to another"; ObjectID = "Oq3-HU-JR9"; */
+"Oq3-HU-JR9.text" = "You can register as a jobber to access all job near you, or register as user to left your works to another";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "PL0-Cf-v3z"; */
+"PL0-Cf-v3z.text" = "Gender";
+
+/* Class = "UILabel"; text = "Swiss"; ObjectID = "Puf-7B-h6q"; */
+"Puf-7B-h6q.text" = "Swiss";
+
+/* Class = "UITableViewSection"; headerTitle = "ZIPCODE"; ObjectID = "RF8-HF-w9y"; */
+"RF8-HF-w9y.headerTitle" = "ZIPCODE";
+
+/* Class = "UITableViewSection"; headerTitle = "LAST NAME"; ObjectID = "RJg-YY-x7h"; */
+"RJg-YY-x7h.headerTitle" = "LAST NAME";
+
+/* Class = "UILabel"; text = "Receive income from jobloyal"; ObjectID = "TLR-ke-55I"; */
+"TLR-ke-55I.text" = "Receive income from jobloyal";
+
+/* Class = "UINavigationItem"; title = "Gender"; ObjectID = "TXW-sW-tpE"; */
+"TXW-sW-tpE.title" = "Gender";
+
+/* Class = "UINavigationItem"; title = "Country"; ObjectID = "ULH-Cy-CTf"; */
+"ULH-Cy-CTf.title" = "Country";
+
+/* Class = "UILabel"; text = "+41"; ObjectID = "UVs-KZ-QOe"; */
+"UVs-KZ-QOe.text" = "+41";
+
+/* Class = "UIBarButtonItem"; title = "Phone Number"; ObjectID = "Y58-Vt-pbP"; */
+"Y58-Vt-pbP.title" = "Phone Number";
+
+/* Class = "UITableViewSection"; headerTitle = "YOUR ID"; ObjectID = "Y6n-3j-ndI"; */
+"Y6n-3j-ndI.headerTitle" = "YOUR ID";
+
+/* Class = "UILabel"; text = "JOBLOYAL"; ObjectID = "YXr-pZ-es3"; */
+"YXr-pZ-es3.text" = "JOBLOYAL";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "ZcX-6r-gcc"; */
+"ZcX-6r-gcc.text" = "Date";
+
+/* Class = "UITableViewSection"; headerTitle = "NAME"; ObjectID = "bxO-8e-AFJ"; */
+"bxO-8e-AFJ.headerTitle" = "NAME";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "byv-FS-t4R"; */
+"byv-FS-t4R.normalTitle" = "Next";
+
+/* Class = "UITableViewSection"; headerTitle = "TERM AND CONDITION"; ObjectID = "cdH-uB-Ubf"; */
+"cdH-uB-Ubf.headerTitle" = "TERM AND CONDITION";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "dHa-hR-Ljw"; */
+"dHa-hR-Ljw.placeholder" = "Enter your name";
+
+/* Class = "UILabel"; text = "13-09-2021"; ObjectID = "dJK-LB-ljd"; */
+"dJK-LB-ljd.text" = "13-09-2021";
+
+/* Class = "UITextField"; placeholder = "Enter your email"; ObjectID = "dKk-sX-sa4"; */
+"dKk-sX-sa4.placeholder" = "Enter your email";
+
+/* Class = "UIButton"; normalTitle = "02:00"; ObjectID = "gU5-ej-OEB"; */
+"gU5-ej-OEB.normalTitle" = "02:00";
+
+/* Class = "UIBarButtonItem"; title = "Verification"; ObjectID = "hQm-VL-zcQ"; */
+"hQm-VL-zcQ.title" = "Verification";
+
+/* Class = "UIBarButtonItem"; title = "WHO ARE YOU"; ObjectID = "iDB-PX-uoh"; */
+"iDB-PX-uoh.title" = "WHO ARE YOU";
+
+/* Class = "UITableViewSection"; headerTitle = "BIRTHDAY"; ObjectID = "itC-zv-0pt"; */
+"itC-zv-0pt.headerTitle" = "BIRTHDAY";
+
+/* Class = "UILabel"; text = "You are not connected to the internet !"; ObjectID = "ju6-CW-UMA"; */
+"ju6-CW-UMA.text" = "You are not connected to the internet !";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "kEv-XZ-Zz0"; */
+"kEv-XZ-Zz0.normalTitle" = "Next";
+
+/* Class = "UINavigationItem"; title = "Verification"; ObjectID = "kbV-ux-L1Z"; */
+"kbV-ux-L1Z.title" = "Verification";
+
+/* Class = "UITextField"; placeholder = "Enter your last name"; ObjectID = "neR-eT-qW9"; */
+"neR-eT-qW9.placeholder" = "Enter your last name";
+
+/* Class = "UITextField"; placeholder = "(78) 747 67 65"; ObjectID = "ngr-uZ-mlB"; */
+"ngr-uZ-mlB.placeholder" = "(78) 747 67 65";
+
+/* Class = "UILabel"; text = "A user is someone who needs help to do something"; ObjectID = "qt1-fm-F8q"; */
+"qt1-fm-F8q.text" = "A user is someone who needs help to do something";
+
+/* Class = "UITextField"; placeholder = "Enter your address"; ObjectID = "rwC-1x-uuW"; */
+"rwC-1x-uuW.placeholder" = "Enter your address";
+
+/* Class = "UITextField"; placeholder = "Enter your ID"; ObjectID = "sbs-XK-ren"; */
+"sbs-XK-ren.placeholder" = "Enter your ID";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "tCq-zC-MtY"; */
+"tCq-zC-MtY.placeholder" = "Enter your name";
+
+/* Class = "UILabel"; text = "JOBLOYAL"; ObjectID = "tX2-v1-Jvi"; */
+"tX2-v1-Jvi.text" = "JOBLOYAL";
+
+/* Class = "UITableViewSection"; headerTitle = "ENTER THE SUBJECT"; ObjectID = "ttM-qU-fSC"; */
+"ttM-qU-fSC.headerTitle" = "ENTER THE SUBJECT";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "uGc-QA-aqK"; */
+"uGc-QA-aqK.text" = "Gender";
+
+/* Class = "UILabel"; text = "All Home Services"; ObjectID = "uv6-7L-MNN"; */
+"uv6-7L-MNN.text" = "All Home Services";
+
+/* Class = "UILabel"; text = "Your message has been replied maximum 3 days later after your sending."; ObjectID = "wNY-fO-ycZ"; */
+"wNY-fO-ycZ.text" = "Your message has been replied maximum 3 days later after your sending.";
+
+/* Class = "UILabel"; text = "Answer"; ObjectID = "x4Z-Az-Dq9"; */
+"x4Z-Az-Dq9.text" = "Answer";
+
+/* Class = "UILabel"; text = "Please Enter your phone number"; ObjectID = "xPn-be-EAP"; */
+"xPn-be-EAP.text" = "Please Enter your phone number";
+
+/* Class = "UILabel"; text = "A Jobber is someone who has a special skill to do a job"; ObjectID = "xSz-FS-Enx"; */
+"xSz-FS-Enx.text" = "A Jobber is someone who has a special skill to do a job";

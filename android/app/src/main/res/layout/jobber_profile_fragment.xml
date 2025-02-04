@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jobber.main.profile.JobberProfileFragment">
+
+    <View
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <ViewFlipper
+                    android:id="@+id/roundedImageView"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <com.vks.RoundFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:rv_backgroundColor="#F5F9FF"
+                        app:rv_cornerRadius="130dp">
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true"
+                            android:progress="80"
+                            app:trackThickness="2dp"
+                            android:layout_gravity="center"
+                            />
+                    </com.vks.RoundFrameLayout>
+                    <com.vks.RoundedImageView
+                        android:id="@+id/avatarImageView"
+                        android:layout_width="98dp"
+                        android:layout_height="98dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_camera_profile"
+                        app:rv_cornerRadius="130dp" />
+                </ViewFlipper>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text=""
+                        android:textColor="#2B2B2B"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/identifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text=""
+                        android:textColor="#757575"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text=""
+                        android:textColor="#9B9B9B"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="gone">
+
+
+                <com.vks.RoundFrameLayout
+                    android:id="@+id/uploadDocumentBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
+                    app:rv_backgroundColor="#464646"
+                    app:rv_cornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/you_not_authorized_yet_click_here_to_authorize_you"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </com.vks.RoundFrameLayout>
+
+                <com.vks.RoundFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
+                    app:rv_backgroundColor="@color/blue_500"
+                    app:rv_cornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:text="@string/please_wait_until_verify_your_documents"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </com.vks.RoundFrameLayout>
+
+                <com.vks.RoundFrameLayout
+                    android:id="@+id/completeProfileBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
+                    app:rv_backgroundColor="@color/blue_500"
+                    app:rv_cornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center"
+                        android:text="@string/compete_your_profile"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </com.vks.RoundFrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="27dp"
+                        android:drawableLeft="@drawable/ic_wallet_profile"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center_vertical"
+                        android:paddingVertical="17dp"
+                        android:text="@string/credit"
+                        android:textColor="@color/blue_500"
+                        android:textSize="19sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="27dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/creditTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="28"
+                            android:textColor="@color/blue_500"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/chf"
+                            android:textColor="@color/blue_500"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginHorizontal="27dp"
+                        android:layout_marginTop="30dp"
+                        android:background="#F2F2F2" />
+                </FrameLayout>
+
+
+                <com.vks.RoundFrameLayout
+                    android:id="@+id/uploadProfileAgainBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingHorizontal="26dp"
+                    android:paddingVertical="14dp"
+                    app:rv_backgroundColor="#ECA559"
+                    app:rv_cornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/your_document_has_been_rejected_please_try_a_new_document"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </com.vks.RoundFrameLayout>
+
+            </ViewFlipper>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_profile" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".jobber.main.requests.JobberRequestsFragment"
+    android:orientation="vertical">
+    <FrameLayout
+        android:background="#F2F2F2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <ImageView
+            android:id="@+id/backgroundMapIamge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+        <FrameLayout
+            android:id="@+id/progress"
+            android:background="#F2F2F2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="#DADADA"
+                />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/statusbar"
+                />
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="#A8A8A8"
+                    />
+
+                <com.yarolegovich.discretescrollview.DiscreteScrollView
+                    android:layout_weight="0"
+                    android:id="@+id/jobPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:dsv_orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:paddingHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:clipToPadding="false"
+                    android:layout_gravity="bottom"
+                    tools:listitem="@layout/item_jobber_request"
+                    />
+                <com.vks.RoundLinearLayout
+                    app:rv_backgroundColor="#fff"
+                    android:paddingVertical="30dp"
+                    app:rv_cornerRadius="10dp"
+                    app:rv_strokeColor="#D8D8D8"
+                    app:rv_strokeWidth="1dp"
+                    android:id="@+id/notFoundBox"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tint="#474747"
+                        app:srcCompat="@drawable/ic_emptybox" />
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="17sp"
+                        android:text="@string/request_box_is_empty"
+                        android:textColor="#474747" />
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:textSize="14sp"
+                        android:text="@string/you_have_not_any_request"
+                        android:textColor="#9A000000" />
+                </com.vks.RoundLinearLayout>
+            </ViewFlipper>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

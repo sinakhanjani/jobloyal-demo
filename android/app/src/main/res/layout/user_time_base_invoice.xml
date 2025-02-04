@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vks.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="12dp"
+    android:orientation="horizontal"
+    app:rv_cornerRadius="6dp"
+    app:rv_strokeColor="#E7E7E7"
+    app:rv_strokeWidth="1dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="17dp">
+
+            <TextView
+                android:id="@+id/titleOfService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Pose de barre de douche"
+                android:textColor="#D9222222"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/devider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ic_ticket_background" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="21">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:background="#00000000"
+                android:clickable="false"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="10000.40"
+                android:textColor="#4A4A4A"
+                android:textColorHint="#BEBEBE"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="per hour"
+                android:textColor="#BABABA"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </FrameLayout>
+</com.vks.RoundLinearLayout>

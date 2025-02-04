@@ -1,0 +1,495 @@
+
+/* Class = "UILabel"; text = "Started Service"; ObjectID = "0Mv-WN-AZH"; */
+"0Mv-WN-AZH.text" = "Service démarré";
+
+/* Class = "UILabel"; text = "ID"; ObjectID = "0mP-UX-Ij9"; */
+"0mP-UX-Ij9.text" = "IDENTIFIANT";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "0zX-d7-zY6"; */
+"0zX-d7-zY6.text" = "158";
+
+/* Class = "UILabel"; text = "Arrival Time"; ObjectID = "15l-TI-gdi"; */
+"15l-TI-gdi.text" = "Heure d'arrivée";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "18i-Ya-FNe"; */
+"18i-Ya-FNe.text" = "Temps";
+
+/* Class = "UITableViewSection"; headerTitle = "PRICE PER UNIT"; ObjectID = "1CJ-yd-awr"; */
+"1CJ-yd-awr.headerTitle" = "PRIX PAR UNITÉ";
+
+/* Class = "UILabel"; text = "Your Current Location"; ObjectID = "1Cf-B2-KVW"; */
+"1Cf-B2-KVW.text" = "Ta location actuelle";
+
+/* Class = "UITableViewSection"; headerTitle = "BIRTHDAY"; ObjectID = "1E9-ix-yje"; */
+"1E9-ix-yje.headerTitle" = "DATE D'ANNIVERSAIRE";
+
+/* Class = "UITableViewController"; title = "Arival Time"; ObjectID = "1Zy-Wf-e3w"; */
+"1Zy-Wf-e3w.title" = "Heure d'arrivée";
+
+/* Class = "UILabel"; text = "Cleaning Home"; ObjectID = "22r-f1-m5T"; */
+"22r-f1-m5T.text" = "Cleaning Home";
+
+/* Class = "UITableViewSection"; headerTitle = "GENDER"; ObjectID = "2Qd-rt-Gi7"; */
+"2Qd-rt-Gi7.headerTitle" = "LE GENRE";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "2bC-kH-sg1"; */
+"2bC-kH-sg1.normalTitle" = "Enregistrer";
+
+/* Class = "UILabel"; text = "Last Update: --"; ObjectID = "2oR-9I-YDn"; */
+"2oR-9I-YDn.text" = "Last Update: --";
+
+/* Class = "UINavigationItem"; title = "Job Report"; ObjectID = "4Lf-4R-bJk"; */
+"4Lf-4R-bJk.title" = "Rapport d'emploi";
+
+/* Class = "UIButton"; normalTitle = "Hold to navigation"; ObjectID = "4kf-yE-2Tp"; */
+"4kf-yE-2Tp.normalTitle" = "Tenir à la navigation";
+
+/* Class = "UITableViewSection"; headerTitle = "UNIT"; ObjectID = "4re-Uc-DTl"; */
+"4re-Uc-DTl.headerTitle" = "UNITÉ";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "6Na-Ei-2CS"; */
+"6Na-Ei-2CS.text" = "Revenu";
+
+/* Class = "UILabel"; text = "Based on"; ObjectID = "6hy-mE-J76"; */
+"6hy-mE-J76.text" = "Basé sur";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "7rJ-kg-Ra0"; */
+"7rJ-kg-Ra0.text" = "CHF";
+
+/* Class = "UILabel"; text = "Unit"; ObjectID = "7zD-18-0UJ"; */
+"7zD-18-0UJ.text" = "Unité";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "8X6-k6-zHi"; */
+"8X6-k6-zHi.text" = "Title";
+
+/* Class = "UILabel"; text = "84"; ObjectID = "8h9-QD-d2o"; */
+"8h9-QD-d2o.text" = "84";
+
+/* Class = "UILabel"; text = "Unit"; ObjectID = "9Nz-wn-i8I"; */
+"9Nz-wn-i8I.text" = "Unité";
+
+/* Class = "UITableViewController"; title = "Services"; ObjectID = "9OR-8B-WaA"; */
+"9OR-8B-WaA.title" = "Prestations de service";
+
+/* Class = "UILabel"; text = "14:09"; ObjectID = "9Uq-3D-0tg"; */
+"9Uq-3D-0tg.text" = "14:09";
+
+/* Class = "UILabel"; text = "19/20/2020 13:10"; ObjectID = "AL4-5B-aLu"; */
+"AL4-5B-aLu.text" = "19/20/2020 13:10";
+
+/* Class = "UIButton"; normalTitle = "Waiting"; ObjectID = "Akv-mU-mLI"; */
+"Akv-mU-mLI.normalTitle" = "Attendre";
+
+/* Class = "UITextField"; placeholder = "Like CH--------------------"; ObjectID = "Amx-ne-cu4"; */
+"Amx-ne-cu4.placeholder" = "Comme CH ---------------------";
+
+/* Class = "UITabBarItem"; title = "Requests"; ObjectID = "AqS-sw-QjD"; */
+"AqS-sw-QjD.title" = "Demandes";
+
+/* Class = "UILabel"; text = "Cleaning Home"; ObjectID = "BBL-fo-nJx"; */
+"BBL-fo-nJx.text" = "Cleaning Home";
+
+/* Class = "UILabel"; text = "None"; ObjectID = "BGq-fp-SZa"; */
+"BGq-fp-SZa.text" = "Choisir";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "BIc-r2-B9H"; */
+"BIc-r2-B9H.text" = "CHF";
+
+/* Class = "UITableViewSection"; headerTitle = "EMAIL"; ObjectID = "BMu-5h-p3t"; */
+"BMu-5h-p3t.headerTitle" = "E-MAIL";
+
+/* Class = "UILabel"; text = "When someone reserved you the notification send you as sms and notification you can disable it"; ObjectID = "BWf-fn-aYd"; */
+"BWf-fn-aYd.text" = "Vous recevrez un message lorsque vous ferez une réservation pour faire quelque chose";
+
+/* Class = "UITableViewSection"; headerTitle = "UNIT TYPE"; ObjectID = "Bhr-M9-NnA"; */
+"Bhr-M9-NnA.headerTitle" = "TYPE D'UNITÉ";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "BxP-OK-ti8"; */
+"BxP-OK-ti8.text" = "CHF";
+
+/* Class = "UILabel"; text = "41.1 KM"; ObjectID = "CH5-sD-Yoa"; */
+"CH5-sD-Yoa.text" = "41.1 KM";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "CMX-lG-mR6"; */
+"CMX-lG-mR6.text" = "158";
+
+/* Class = "UILabel"; text = "Payment"; ObjectID = "D7s-z0-Nnk"; */
+"D7s-z0-Nnk.text" = "Paiement";
+
+/* Class = "UITableViewController"; title = "Job Category"; ObjectID = "DAm-Dk-eNx"; */
+"DAm-Dk-eNx.title" = "Catégorie d'emploi";
+
+/* Class = "UILabel"; text = "Service title"; ObjectID = "DH6-bl-KWG"; */
+"DH6-bl-KWG.text" = "Titre du service";
+
+/* Class = "UILabel"; text = "Version 0.1"; ObjectID = "DWW-Rc-ASh"; */
+"DWW-Rc-ASh.text" = "Version 0.1";
+
+/* Class = "UILabel"; text = "Started Service"; ObjectID = "EA4-Yc-CmR"; */
+"EA4-Yc-CmR.text" = "Service démarré";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "EgR-XA-wVe"; */
+"EgR-XA-wVe.text" = "158";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Ew7-Gp-jQD"; */
+"Ew7-Gp-jQD.normalTitle" = "Enregistrer";
+
+/* Class = "UILabel"; text = "10 Meter"; ObjectID = "G9d-Bp-y1Q"; */
+"G9d-Bp-y1Q.text" = "10 Meter";
+
+/* Class = "UIButton"; normalTitle = "Take a Picture"; ObjectID = "H9L-tI-1Q0"; */
+"H9L-tI-1Q0.normalTitle" = "Prendre une photo";
+
+/* Class = "UILabel"; text = "Please upload your national identity cards, driving licences, passports, residence permits"; ObjectID = "HwX-gw-3yf"; */
+"HwX-gw-3yf.text" = "Veuillez télécharger vos cartes nationales d'identité, permis de conduire, passeports, titres de séjour";
+
+/* Class = "UIButton"; normalTitle = "I Start The Service"; ObjectID = "Lpx-Qk-Xhx"; */
+"Lpx-Qk-Xhx.normalTitle" = "Je démarre le service";
+
+/* Class = "UILabel"; text = "Credit"; ObjectID = "MI6-X7-Ivm"; */
+"MI6-X7-Ivm.text" = "Crédit";
+
+/* Class = "UILabel"; text = "Rue de Rivoli"; ObjectID = "Mam-Fg-wcE"; */
+"Mam-Fg-wcE.text" = "Rue de Rivoli";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "MgF-M3-uu4"; */
+"MgF-M3-uu4.text" = "158";
+
+/* Class = "UISegmentedControl"; Mrl-I9-bfA.segmentTitles[0] = "Daily"; ObjectID = "Mrl-I9-bfA"; */
+"Mrl-I9-bfA.segmentTitles[0]" = "du quotidien";
+
+/* Class = "UISegmentedControl"; Mrl-I9-bfA.segmentTitles[1] = "Weekly"; ObjectID = "Mrl-I9-bfA"; */
+"Mrl-I9-bfA.segmentTitles[1]" = "Hebdomadaire";
+
+/* Class = "UISegmentedControl"; Mrl-I9-bfA.segmentTitles[2] = "Monthly"; ObjectID = "Mrl-I9-bfA"; */
+"Mrl-I9-bfA.segmentTitles[2]" = "Mensuel";
+
+/* Class = "UIButton"; normalTitle = "I Start The Service"; ObjectID = "MuL-VP-HgM"; */
+"MuL-VP-HgM.normalTitle" = "Je démarre le service";
+
+/* Class = "UILabel"; text = "Total Time"; ObjectID = "NHU-pk-0F3"; */
+"NHU-pk-0F3.text" = "Temps total";
+
+/* Class = "UILabel"; text = "Per hour"; ObjectID = "NIj-uh-BZ3"; */
+"NIj-uh-BZ3.text" = "Par Heure";
+
+/* Class = "UIButton"; normalTitle = "Delete Account"; ObjectID = "Ng0-1d-pLo"; */
+"Ng0-1d-pLo.normalTitle" = "Supprimer le compte";
+
+/* Class = "UILabel"; text = "Rue de Rivoli"; ObjectID = "NpW-HU-XKx"; */
+"NpW-HU-XKx.text" = "Rue de Rivoli";
+
+/* Class = "UITextField"; placeholder = "Enter your address"; ObjectID = "Q3A-J2-iML"; */
+"Q3A-J2-iML.placeholder" = "Entrez votre adresse";
+
+/* Class = "UITextField"; placeholder = "Enter your email"; ObjectID = "QXe-22-5c6"; */
+"QXe-22-5c6.placeholder" = "Entrer votre Email";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "QZi-g0-QGO"; */
+"QZi-g0-QGO.text" = "CHF";
+
+/* Class = "UILabel"; text = "Total Price"; ObjectID = "QcP-fV-M7o"; */
+"QcP-fV-M7o.text" = "Prix total";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "QhJ-a5-URK"; */
+"QhJ-a5-URK.normalTitle" = "Ajouter";
+
+/* Class = "UILabel"; text = "Wait for pay"; ObjectID = "Qw9-oA-Dqw"; */
+"Qw9-oA-Dqw.text" = "Attendez le paiement";
+
+/* Class = "UITableViewSection"; headerTitle = "ADDRESS"; ObjectID = "S7K-2a-o2T"; */
+"S7K-2a-o2T.headerTitle" = "ADRESSE";
+
+/* Class = "UIButton"; normalTitle = "Update Location"; ObjectID = "Sgp-k2-XNh"; */
+"Sgp-k2-XNh.normalTitle" = "Mettre à jour l'emplacement";
+
+/* Class = "UILabel"; text = "Service title"; ObjectID = "Srs-Ph-uaN"; */
+"Srs-Ph-uaN.text" = "Titre du service";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "T3g-9O-yau"; */
+"T3g-9O-yau.normalTitle" = "Annuler";
+
+/* Class = "UILabel"; text = "41.1 KM"; ObjectID = "T5G-TD-dlW"; */
+"T5G-TD-dlW.text" = "41.1 KM";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "T8o-J8-yyy"; */
+"T8o-J8-yyy.normalTitle" = "Enregistrer";
+
+/* Class = "UILabel"; text = "SMS"; ObjectID = "TEA-Xa-Dok"; */
+"TEA-Xa-Dok.text" = "SMS";
+
+/* Class = "UILabel"; text = "Cleaning Home"; ObjectID = "TLA-Sk-1R1"; */
+"TLA-Sk-1R1.text" = "Cleaning Home";
+
+/* Class = "UILabel"; text = "Select your skills category"; ObjectID = "TOl-ZU-OsZ"; */
+"TOl-ZU-OsZ.text" = "Sélectionnez votre catégorie de compétences";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Tlh-ML-bhr"; */
+"Tlh-ML-bhr.normalTitle" = "Annuler";
+
+/* Class = "UITableViewSection"; headerTitle = "EMAIL"; ObjectID = "TvC-Me-1kS"; */
+"TvC-Me-1kS.headerTitle" = "E-MAIL";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "ULu-2Y-Med"; */
+"ULu-2Y-Med.title" = "Profil";
+
+/* Class = "UILabel"; text = "Ask Sina khanjani"; ObjectID = "UWm-2U-krW"; */
+"UWm-2U-krW.text" = "Ask Sina khanjani";
+
+/* Class = "UINavigationItem"; title = "Unit Type"; ObjectID = "Ua6-8F-3t6"; */
+"Ua6-8F-3t6.title" = "Type d'unité";
+
+/* Class = "UILabel"; text = "Service title"; ObjectID = "V38-h6-igf"; */
+"V38-h6-igf.text" = "Titre du service";
+
+/* Class = "UILabel"; text = "Sina khanjani"; ObjectID = "VC2-6d-xM4"; */
+"VC2-6d-xM4.text" = "Sina khanjani";
+
+/* Class = "UILabel"; text = "None"; ObjectID = "VDf-fZ-5OZ"; */
+"VDf-fZ-5OZ.text" = "Choisir";
+
+/* Class = "UITabBarItem"; title = "Report"; ObjectID = "VUB-oV-xgk"; */
+"VUB-oV-xgk.title" = "Reportage";
+
+/* Class = "UILabel"; text = "Estimated Arival Time"; ObjectID = "VZO-N7-v2G"; */
+"VZO-N7-v2G.text" = "Heure d'arrivée estimée";
+
+/* Class = "UILabel"; text = "84"; ObjectID = "W0E-XS-QiV"; */
+"W0E-XS-QiV.text" = "84";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "WLF-lR-5MG"; */
+"WLF-lR-5MG.text" = "Date";
+
+/* Class = "UILabel"; text = "Rue de Rovio"; ObjectID = "Wzs-Ml-JAL"; */
+"Wzs-Ml-JAL.text" = "Rue de Rovio";
+
+/* Class = "UILabel"; text = "Notification"; ObjectID = "Xcz-jW-qJI"; */
+"Xcz-jW-qJI.text" = "Notification";
+
+/* Class = "UINavigationItem"; title = "JOBLOYAL"; ObjectID = "YoH-bk-NHq"; */
+"YoH-bk-NHq.title" = "JOBLOYAL";
+
+/* Class = "UILabel"; text = "Unit"; ObjectID = "Z5G-9z-KpT"; */
+"Z5G-9z-KpT.text" = "Unité";
+
+/* Class = "UILabel"; text = "09125933044"; ObjectID = "ZJG-mu-87d"; */
+"ZJG-mu-87d.text" = "09125933044";
+
+/* Class = "UIButton"; normalTitle = " Call Phone Number"; ObjectID = "Zte-LR-PAm"; */
+"Zte-LR-PAm.normalTitle" = " Appeler le numéro de téléphone";
+
+/* Class = "UILabel"; text = "Select your skill"; ObjectID = "avu-DK-2Zz"; */
+"avu-DK-2Zz.text" = "Sélectionnez votre compétence";
+
+/* Class = "UILabel"; text = "sums of accepted service's price"; ObjectID = "axn-cw-C8Q"; */
+"axn-cw-C8Q.text" = "sommes des prix des prestations acceptées";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "b9W-zz-mQx"; */
+"b9W-zz-mQx.text" = "158";
+
+/* Class = "UILabel"; text = "You not Authorized yet, Click Here to Authorize you"; ObjectID = "bJz-L6-NsK"; */
+"bJz-L6-NsK.text" = "Vous n'êtes pas encore autorisé, cliquez ici pour vous autoriser";
+
+/* Class = "UITableViewController"; title = "Job"; ObjectID = "byl-gf-Udx"; */
+"byl-gf-Udx.title" = "Emploi";
+
+/* Class = "UINavigationItem"; title = "Report"; ObjectID = "bzz-Gu-TfH"; */
+"bzz-Gu-TfH.title" = "Reportage";
+
+/* Class = "UITableViewSection"; headerTitle = "IBAN"; ObjectID = "cGp-a4-E9f"; */
+"cGp-a4-E9f.headerTitle" = "IBAN";
+
+/* Class = "UITabBarItem"; title = "Jobs"; ObjectID = "ccQ-Ls-xZS"; */
+"ccQ-Ls-xZS.title" = "Travaux";
+
+/* Class = "UILabel"; text = "By activating this section, we remind you every day to make your inactive jobs online"; ObjectID = "ce7-Vw-SMw"; */
+"ce7-Vw-SMw.text" = "En activant cette rubrique, nous vous rappelons chaque jour de mettre en ligne vos jobs inactifs";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "cxA-b0-wpN"; */
+"cxA-b0-wpN.text" = "Titre";
+
+/* Class = "UIButton"; normalTitle = "Upload an Avatar"; ObjectID = "dHg-Dl-xYL"; */
+"dHg-Dl-xYL.normalTitle" = "Télécharger un avatar";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "dUt-FQ-2Vy"; */
+"dUt-FQ-2Vy.text" = "158";
+
+/* Class = "UILabel"; text = "Arrival time to show the user"; ObjectID = "dct-bU-LtC"; */
+"dct-bU-LtC.text" = "Heure d'arrivée pour montrer à l'utilisateur";
+
+/* Class = "UILabel"; text = "Unit"; ObjectID = "eNE-dt-FSh"; */
+"eNE-dt-FSh.text" = "Unité";
+
+/* Class = "UIViewController"; title = "Requests"; ObjectID = "edc-xz-Jpi"; */
+"edc-xz-Jpi.title" = "Demandes";
+
+/* Class = "UILabel"; text = "Sina khanjani"; ObjectID = "ehF-yq-Wb8"; */
+"ehF-yq-Wb8.text" = "Sina khanjani";
+
+/* Class = "UILabel"; text = "JOBLOYAL"; ObjectID = "ezY-yI-3gz"; */
+"ezY-yI-3gz.text" = "JOBLOYAL";
+
+/* Class = "UITableViewController"; title = "Job Report"; ObjectID = "fgs-C8-Cil"; */
+"fgs-C8-Cil.title" = "Rapport d'emploi";
+
+/* Class = "UILabel"; text = "The platform connecting professionals with clients in their area. We offer an array of home services with close radius from your place. Just browse the service needed to find out the professionals near you. Job Loyal creating a new way to provide home services solutions."; ObjectID = "ftB-x1-t2f"; */
+"ftB-x1-t2f.text" = "A propos : Les services à domicile près de chez vous. L’appli qui connecte les professionnels aux clients de proximité. Nous vous offrons une panoplie de services à domicile Et  Vous n’avez qu’à rechercher la prestation requise afin de trouver le professionnel idéal près de chez vous. JobLoyal, une nouvelle façon de fournir des solutions de services à domicile.";
+
+/* Class = "UIButton"; normalTitle = "Upload an Avatar"; ObjectID = "gA6-3I-RQT"; */
+"gA6-3I-RQT.normalTitle" = "Télécharger un avatar";
+
+/* Class = "UILabel"; text = "Sina khanjani"; ObjectID = "gMZ-jy-ngk"; */
+"gMZ-jy-ngk.text" = "Sina khanjani";
+
+/* Class = "UILabel"; text = "Ask mohammad Fallah to open the jobloyal and verify your job to get the mony on your wallet"; ObjectID = "gn3-W6-F6P"; */
+"gn3-W6-F6P.text" = "Ask mohammad Fallah to open the jobloyal and verify your job to get the mony on your wallet";
+
+/* Class = "UITextField"; placeholder = "Enter your address"; ObjectID = "h43-Tv-IUf"; */
+"h43-Tv-IUf.placeholder" = "Entrez votre adresse";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "hDG-sf-J3v"; */
+"hDG-sf-J3v.text" = "CHF";
+
+/* Class = "UINavigationItem"; title = "Unit"; ObjectID = "hPb-jg-st1"; */
+"hPb-jg-st1.title" = "Unité";
+
+/* Class = "UINavigationItem"; title = "Requests"; ObjectID = "i4t-fX-2Wz"; */
+"i4t-fX-2Wz.title" = "Demandes";
+
+/* Class = "UITableViewSection"; headerTitle = "ABOUT YOU (USER READ IT)"; ObjectID = "iCZ-Pv-7IE"; */
+"iCZ-Pv-7IE.headerTitle" = "À PROPOS DE VOUS (L'UTILISATEUR LIRE)";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "iGM-qt-BfF"; */
+"iGM-qt-BfF.text" = "Titre";
+
+/* Class = "UITextField"; placeholder = "Enter your price"; ObjectID = "iK3-jK-ESt"; */
+"iK3-jK-ESt.placeholder" = "Entrez votre prix";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "iXp-5y-fgh"; */
+"iXp-5y-fgh.text" = "CHF";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "j7Y-pX-3le"; */
+"j7Y-pX-3le.text" = "CHF";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "jRd-M2-75C"; */
+"jRd-M2-75C.text" = "CHF";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "jcS-Fg-Y6x"; */
+"jcS-Fg-Y6x.text" = "Date";
+
+/* Class = "UILabel"; text = "Your money in your wallet pay you every time you want automatically."; ObjectID = "jgc-JA-awq"; */
+"jgc-JA-awq.text" = "Votre argent dans votre portefeuille vous paie chaque fois que vous le souhaitez automatiquement.";
+
+/* Class = "UILabel"; text = "Rue de Rovioo"; ObjectID = "jpK-x3-ULy"; */
+"jpK-x3-ULy.text" = "Rue de Rovioo";
+
+/* Class = "UILabel"; text = "Service title"; ObjectID = "kXW-xa-Lv0"; */
+"kXW-xa-Lv0.text" = "Titre du service";
+
+/* Class = "UILabel"; text = "You can’t answer other request until the user accept or don’t answer for three minitues"; ObjectID = "kcd-u0-qjd"; */
+"kcd-u0-qjd.text" = "Vous ne pouvez pas répondre à une autre demande tant que l'utilisateur n'a pas accepté ou n'a pas répondu pendant trois minutes";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "l9b-e4-VGT"; */
+"l9b-e4-VGT.title" = "Profil";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ldH-Pf-wp9"; */
+"ldH-Pf-wp9.normalTitle" = "Annuler";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "lfu-3x-JNF"; */
+"lfu-3x-JNF.text" = "Prix";
+
+/* Class = "UILabel"; text = "Unit"; ObjectID = "lkY-Mp-8m1"; */
+"lkY-Mp-8m1.text" = "Unité";
+
+/* Class = "UIButton"; normalTitle = "I Arrive Home"; ObjectID = "mqg-Um-UF8"; */
+"mqg-Um-UF8.normalTitle" = "Je suis arrivé";
+
+/* Class = "UILabel"; text = "Saturday 12 July"; ObjectID = "nH3-Lt-MNj"; */
+"nH3-Lt-MNj.text" = "Saturday 12 July";
+
+/* Class = "UILabel"; text = "19/20/2020 13:10"; ObjectID = "nMO-pQ-X4C"; */
+"nMO-pQ-X4C.text" = "19/20/2020 13:10";
+
+/* Class = "UITableViewSection"; headerTitle = "ABOUT YOU (USER READ IT)"; ObjectID = "o5T-1E-8zL"; */
+"o5T-1E-8zL.headerTitle" = "À PROPOS DE VOUS (L'UTILISATEUR LIRE)";
+
+/* Class = "UILabel"; text = "All Home Services"; ObjectID = "oIY-fW-iIe"; */
+"oIY-fW-iIe.text" = "Tous les services à domicile";
+
+/* Class = "UILabel"; text = "Job title"; ObjectID = "oVT-yu-sVI"; */
+"oVT-yu-sVI.text" = "Titre d'emploi";
+
+/* Class = "UIButton"; normalTitle = "ACCPETED"; ObjectID = "og2-wS-aVv"; */
+"og2-wS-aVv.normalTitle" = "ACCPETED";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "owc-Vf-tLf"; */
+"owc-Vf-tLf.normalTitle" = "Envoyer";
+
+/* Class = "UITableViewController"; title = "Service Report"; ObjectID = "pco-Re-ifH"; */
+"pco-Re-ifH.title" = "Rapport de service";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "pyi-Rv-uui"; */
+"pyi-Rv-uui.text" = "CHF";
+
+/* Class = "UILabel"; text = "84"; ObjectID = "qiM-P3-sLT"; */
+"qiM-P3-sLT.text" = "84";
+
+/* Class = "UILabel"; text = "Pay Attention - That when you choose unit type numberic the user have to select amount of service per unit but in timic type user only select the service and pay after finished your work "; ObjectID = "qr1-0P-AmZ"; */
+"qr1-0P-AmZ.text" = "Faites attention - Lorsque vous choisissez le type d'unité numérique, l'utilisateur doit sélectionner la quantité de service par unité, mais dans le type de temps, l'utilisateur ne sélectionne que le service et paie après avoir terminé votre travail";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "rQl-DE-tLD"; */
+"rQl-DE-tLD.text" = "158";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "rSz-cx-MtO"; */
+"rSz-cx-MtO.text" = "CHF";
+
+/* Class = "UITextField"; placeholder = "Enter your email"; ObjectID = "ref-DX-Dnd"; */
+"ref-DX-Dnd.placeholder" = "Entrer votre Email";
+
+/* Class = "UILabel"; text = "IBAN account ownership must match your first and last name registered in the program"; ObjectID = "rq3-ar-QXj"; */
+"rq3-ar-QXj.text" = "La propriété du compte IBAN doit correspondre à vos nom et prénom enregistrés dans le programme";
+
+/* Class = "UILabel"; text = "Per hour"; ObjectID = "saO-gY-0jJ"; */
+"saO-gY-0jJ.text" = "Par heure";
+
+/* Class = "UILabel"; text = "Sina khanjani"; ObjectID = "soX-12-1p3"; */
+"soX-12-1p3.text" = "Sina khanjani";
+
+/* Class = "UILabel"; text = "Per hour"; ObjectID = "tKN-cq-zUb"; */
+"tKN-cq-zUb.text" = "Par heure";
+
+/* Class = "UIButton"; normalTitle = "Upload From Gallery"; ObjectID = "tSN-MK-jGN"; */
+"tSN-MK-jGN.normalTitle" = "Télécharger depuis la galerie";
+
+/* Class = "UILabel"; text = "Routing to Rue de Rivoli"; ObjectID = "tUW-v4-nmQ"; */
+"tUW-v4-nmQ.text" = "Routage vers la rue de Rivoli";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uBD-hm-f0h"; */
+"uBD-hm-f0h.text" = "Revenu";
+
+/* Class = "UILabel"; text = "Income"; ObjectID = "uCE-3r-Kyz"; */
+"uCE-3r-Kyz.text" = "Revenu";
+
+/* Class = "UILabel"; text = "Daily job activation reminder"; ObjectID = "ueQ-c1-hTo"; */
+"ueQ-c1-hTo.text" = "Rappel d'emploi en ligne";
+
+/* Class = "UILabel"; text = "Routing to Rue de Rivoli"; ObjectID = "upV-TQ-6Rd"; */
+"upV-TQ-6Rd.text" = "Routing to Rue de Rivoli";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "wMc-26-CpL"; */
+"wMc-26-CpL.text" = "Revenu";
+
+/* Class = "UILabel"; text = "Service title"; ObjectID = "wT4-Y0-fna"; */
+"wT4-Y0-fna.text" = "Titre du service";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "wbM-Z5-AWY"; */
+"wbM-Z5-AWY.text" = "Choisir";
+
+/* Class = "UITableViewSection"; headerTitle = "ADDRESS"; ObjectID = "x7G-H6-8lK"; */
+"x7G-H6-8lK.headerTitle" = "ADRESSE";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "yeo-p4-TWn"; */
+"yeo-p4-TWn.text" = "158";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "z3x-oP-uW9"; */
+"z3x-oP-uW9.normalTitle" = "Annuler";

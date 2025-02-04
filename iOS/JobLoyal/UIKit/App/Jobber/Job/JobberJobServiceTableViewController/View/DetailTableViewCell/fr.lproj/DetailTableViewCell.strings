@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Travaux terminés"; ObjectID = "0dq-TF-rUq"; */
+"0dq-TF-rUq.text" = "Terminé";
+
+/* Class = "UILabel"; text = "Demandes"; ObjectID = "DLm-VO-fJs"; */
+"DLm-VO-fJs.text" = "Demandes";
+
+/* Class = "UILabel"; text = "0.00"; ObjectID = "ZQe-xa-wvw"; */
+"ZQe-xa-wvw.text" = "0.00";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Zkw-9m-9D2"; */
+"Zkw-9m-9D2.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "d4Z-mL-sz9"; */
+"d4Z-mL-sz9.text" = "0";
+
+/* Class = "UILabel"; text = "Revenu total"; ObjectID = "lJw-qj-RAi"; */
+"lJw-qj-RAi.text" = "Revenu total";

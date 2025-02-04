@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jobber_bottom_navigation"
+    app:startDestination="@id/navigation_jobs">
+
+    <fragment
+        android:id="@+id/navigation_jobs"
+        android:name="com.jobloyal.jobber.main.jobs.JobsFragment"
+        android:label="jobs_fragment"
+        tools:layout="@layout/jobs_fragment" >
+        <action
+            android:id="@+id/action_navigation_jobs_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_requests"
+        android:name="com.jobloyal.jobber.main.requests.JobberRequestsFragment"
+        android:label="jobber_requests_fragment"
+        tools:layout="@layout/jobber_requests_fragment" >
+        <action
+            android:id="@+id/action_navigation_requests_to_estimatedArrivalTimeFragment"
+            app:destination="@id/estimatedArrivalTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/estimatedArrivalTimeFragment"
+        android:name="com.jobloyal.jobber.estimate.EstimatedArrivalTimeFragment"
+        android:label="EstimatedArrivalTimeFragment" >
+        <argument
+            android:name="request"
+            app:argType="com.jobloyal.jobber.model.request.RequestModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_report"
+        android:name="com.jobloyal.jobber.main.report.JobberReportFragment"
+        android:label="jobber_report_fragment"
+        tools:layout="@layout/jobber_report_fragment" >
+        <action
+            android:id="@+id/action_navigation_report_to_servicesReportFragment"
+            app:destination="@id/servicesReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicesReportFragment"
+        android:name="com.jobloyal.jobber.main.report.service.ServicesReportFragment"
+        android:label="ServicesReportFragment" >
+        <argument
+            android:name="report"
+            app:argType="com.jobloyal.jobber.model.report.SingleReportModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.jobloyal.jobber.main.profile.JobberProfileFragment"
+        android:label="jobber_profile_fragment"
+        tools:layout="@layout/jobber_profile_fragment" />
+    <fragment
+        android:id="@+id/jobsCategoryFragment"
+        android:name="com.jobloyal.jobber.category.jobs.JobsCategoryFragment"
+        android:label="JobsCategoryFragment" >
+        <argument
+            android:name="categoryId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.jobloyal.jobber.category.CategoryFragment"
+        android:label="JobsCategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_jobsCategoryFragment"
+            app:destination="@id/jobsCategoryFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_self"
+            app:destination="@id/categoryFragment" />
+        <argument
+            android:name="children"
+            app:argType="com.jobloyal.jobber.model.category.CategoryModel[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

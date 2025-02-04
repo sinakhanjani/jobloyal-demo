@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Meter"; ObjectID = "CRz-ND-FGs"; */
+"CRz-ND-FGs.text" = "Meter";
+
+/* Class = "UILabel"; text = "Prix par unité"; ObjectID = "QiS-fF-Pvo"; */
+"QiS-fF-Pvo.text" = "Prix par unité";
+
+/* Class = "UITextField"; placeholder = "Value"; ObjectID = "SPN-Ta-YAV"; */
+"SPN-Ta-YAV.placeholder" = "Value";
+
+/* Class = "UILabel"; text = "CHF244"; ObjectID = "aM9-de-J8Y"; */
+"aM9-de-J8Y.text" = "CHF244";
+
+/* Class = "UILabel"; text = "CHF0.2"; ObjectID = "mUB-bL-xho"; */
+"mUB-bL-xho.text" = "CHF0.2";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "uH1-yA-D7w"; */
+"uH1-yA-D7w.text" = "Total";
+
+/* Class = "UILabel"; text = "Cleaning Home"; ObjectID = "vjK-HB-ilY"; */
+"vjK-HB-ilY.text" = "Cleaning Home";

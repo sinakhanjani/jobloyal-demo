@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.vks.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="false"
+        android:focusable="false"
+        app:rv_cornerRadius="17dp"
+        app:rv_strokeColor="#E6E6E6"
+        app:rv_strokeWidth="1dp">
+
+        <com.vks.RoundFrameLayout
+            android:id="@+id/avilableTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            app:rv_backgroundColor="#0A1A5BD1"
+            app:rv_cornerRadius_BL="17dp"
+            app:rv_cornerRadius_TR="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/available"
+                android:textColor="@color/blue_700"
+                android:textSize="16sp" />
+        </com.vks.RoundFrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="21dp">
+
+                <TextView
+                    android:id="@+id/jobTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Cleaning Home"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/serviceCountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="9 Services"
+                    android:textSize="15sp" />
+
+                <FrameLayout
+                    android:id="@+id/serviceButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="@string/services_and_comments"
+                        android:textColor="#7E7E7E"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_arrow_right"
+                        app:tint="#7E7E7E" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="0.5dp"
+                        app:srcCompat="@drawable/ic_clock" />
+
+                    <TextView
+                        android:id="@+id/timeline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:alpha="0.71"
+                        android:text="Today be online at 10:21"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.vks.RoundButton
+                    android:id="@+id/offlineBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:paddingVertical="14dp"
+                    android:text="@string/offline"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:rv_backgroundColor="@color/offlineButton"
+
+                    app:rv_cornerRadius_BL="17dp" />
+
+                <com.vks.RoundButton
+                    android:id="@+id/onlineBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:paddingVertical="14dp"
+                    android:text="@string/online"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:rv_backgroundColor="@color/blue_700"
+                    app:rv_cornerRadius_BR="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.vks.RoundFrameLayout>
+</FrameLayout>

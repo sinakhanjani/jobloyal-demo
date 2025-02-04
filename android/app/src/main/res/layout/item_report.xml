@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="14dp"
+    android:paddingLeft="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleOfJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" gfh"
+            android:textColor="#4B4B4B"
+            android:textSize="15sp"
+            android:fontFamily="@font/lato_bold"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yy/MM/dd HH:mm"
+            android:textColor="#000000"
+            android:alpha="0.57"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_regular"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_location"
+                />
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.57"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Rue  de Rivoli"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.vks.RoundTextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_cornerRadius_TL="100dp"
+        app:rv_cornerRadius_BL="100dp"
+        app:rv_backgroundColor="@color/blue_700"
+        android:text="accepted"
+        android:textColor="@color/white"
+        android:paddingVertical="6dp"
+        android:fontFamily="@font/lato_bold"
+        android:paddingHorizontal="10dp"
+        />
+</LinearLayout>

@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Hors ligne"; ObjectID = "2WQ-rq-xPZ"; */
+"2WQ-rq-xPZ.normalTitle" = "Hors ligne";
+
+/* Class = "UILabel"; text = "Disponible"; ObjectID = "9aJ-4i-G4B"; */
+"9aJ-4i-G4B.text" = "Disponible";
+
+/* Class = "UILabel"; text = "today be online at 10:21"; ObjectID = "Sff-2I-QRf"; */
+"Sff-2I-QRf.text" = "today be online at 10:21";
+
+/* Class = "UIButton"; normalTitle = "En ligne"; ObjectID = "TL3-Pv-wka"; */
+"TL3-Pv-wka.normalTitle" = "En ligne";
+
+/* Class = "UILabel"; text = "Cleaning Home"; ObjectID = "bjZ-OU-Z6k"; */
+"bjZ-OU-Z6k.text" = "Cleaning Home";
+
+/* Class = "UILabel"; text = "commentaires"; ObjectID = "cKY-ag-PMB"; */
+"cKY-ag-PMB.text" = "commentaires";
+
+/* Class = "UILabel"; text = "number of services"; ObjectID = "qkA-kv-SnZ"; */
+"qkA-kv-SnZ.text" = "number of services";

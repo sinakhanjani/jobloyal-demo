@@ -1,0 +1,112 @@
+.main-request-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  .request-card {
+    background: #ffffff;
+    box-shadow: 0px 2px 7px #dbdbdb;
+    border-radius: 10px;
+    padding: 33px;
+    flex: 70%;
+
+    .job-title {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      span {
+        font-weight: 700;
+      }
+    }
+    h3 {
+      font-size: 16px;
+    }
+    .services {
+      border-radius: 5px;
+      border: 1px solid #F2F2F2;
+      margin: 10px 10px;
+      padding: 5px;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        tr {
+          border-bottom: 1px solid #f9f9f9;
+        }
+        th, td {
+          padding: 13px;
+        }
+        tr:last-child {
+          border-bottom: 1px solid #ffffff;
+        }
+        .title-row {
+          width: 65%;
+        }
+      }
+      .accepted {
+        color: #2E5FB7;
+      }
+      tr.rejected-row {
+        color: #bdbdbd;
+      }
+    }
+
+    .times-report {
+      margin: 15px 40px;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        td:nth-child(even) {
+          text-align: right;
+        }
+        tr {
+          border-bottom: 1px solid #f9f9f9;
+        }
+        tr:last-child {
+          border-bottom: 1px solid #ffffff;
+        }
+        th, td {
+          padding: 13px 0;
+        }
+      }
+    }
+  }
+
+  .information-box {
+    background: #ffffff;
+    box-shadow: 0px 2px 7px #dbdbdb;
+    border-radius: 10px;
+    padding: 10px;
+    flex: calc(30% - 20px);
+    margin-left: 20px;
+
+    button {
+      display: flex;
+      margin: 10px auto;
+    }
+    table {
+      width: 100%;
+      padding: 0 10px 0 20px;
+      border-collapse: collapse;
+      td:nth-child(even) {
+        text-align: right;
+        color: #303030;
+        font-weight: 400;
+
+      }
+      tr {
+        border-bottom: 1px solid #f9f9f9;
+      }
+      th, td {
+        padding: 13px;
+        font-weight: bold;
+      }
+
+    }
+  }
+}
+@media (max-width: 800px) {
+  .information-box, .request-card {
+    flex: 100% !important;
+    margin: 0;
+  }
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vks.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp">
+
+    <com.vks.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        app:rv_cornerRadius="17dp"
+        app:rv_strokeColor="@color/blue_700"
+        app:rv_strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_plus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/add_new_job"
+                android:textColor="@color/blue_700"
+                android:textSize="18sp" />
+
+            <com.vks.RoundTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center"
+                android:text="@string/add_services_to_find_you_every_body"
+                android:textColor="@color/blue_700"
+                android:textSize="15sp"
+                app:rv_backgroundColor="#0A1A5BD1"
+                app:rv_cornerRadius="40dp" />
+        </LinearLayout>
+    </com.vks.RoundFrameLayout>
+</com.vks.RoundFrameLayout>

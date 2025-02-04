@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987409851286",
+    "project_id": "jobloyal-81f1b",
+    "storage_bucket": "jobloyal-81f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987409851286:android:bf829b18c7fdd07f0573b7",
+        "android_client_info": {
+          "package_name": "com.jobloyal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987409851286-a1pakruk52et8nqbjv02njr0cgmorfin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBn6nfJB9eh6Qbk--y3JMkDuyQLjNI2r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987409851286-a1pakruk52et8nqbjv02njr0cgmorfin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

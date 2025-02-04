@@ -1,0 +1,234 @@
+.profile-container {
+  display: block;
+
+  .profile-main-container {
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    block-size: content-box;
+    width: 79%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .profile-sidebar {
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      position: relative;
+      height: 100%;
+    }
+    width: 18%;
+    padding-top: 40px;
+    background: #ffffff;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2-1px 0px 8px 0px #dedede;
+  }
+}
+.etags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.profile-avatar {
+  border-radius: 100%;
+  width: 13em;
+  display: inline-block;
+  justify-content: center;
+  margin: auto;
+  margin-left: calc(50% - 6.5em);
+  object-fit: cover;
+  height: 13em;
+}
+.profile-status {
+  background: #1F6AE0;
+  padding: 2px  6px;
+  display: inline;
+  margin-left: -35px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.rating {
+  .stars {
+    margin: 16px auto 4px auto;
+    display: flex;
+  }
+  color: #B2B2B2;
+  text-align: center;
+  font-size: 14px;
+}
+.profile-info {
+  margin-top: 20px;
+  padding: 0 40px 16px 40px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.09);
+  .profile-info-name {
+    font-weight: bold;
+    color: #2B2B2B;
+    font-size: 21px;
+  }
+  .profile-info-meta {
+    font-size: 15px;
+    color: #888888;
+    margin-top: 5px;
+  }
+}
+.profile-sidebar-item {
+  display: flex;
+  padding: 17px 40px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.09);
+  &:hover {
+    background: #f6f6f6;
+    cursor: pointer;
+  }
+  .item-title {
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 16px;
+    color: #373737;
+  }
+}
+.soft-shadow-box {
+  margin-top: 50px;
+  background: #ffffff;
+  box-shadow: 1px 1px 6px 0px #e2e2e2;
+  padding: 20px 30px;
+  border-radius: 10px;
+
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .detail-about-me {
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 1px solid #D8D8D8;
+    color: #606060;
+    padding-bottom: 15px;
+    .detail-about-item {
+      margin-right: 10px;
+    }
+  }
+  .user-row {
+    flex-flow: column;
+    .detail-about-item {
+      margin-top: 10px;
+    }
+  }
+}
+.editable-information-box {
+  border: 2px solid #1F6AE0;
+  border-radius: 25px 0px 0px 25px;
+  padding: 5px 35px 5px 22px;
+  display: inline-block;
+
+  .borderless {
+    width: 200px;
+    margin-left: 10px;
+    border: none;
+    font-weight: 300;
+    font-size: 15px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.about-me-editable {
+  display: flex;
+  margin-top: 15px;
+}
+.save-button  {
+  margin: 0;
+  background: #1F6AE0;
+  border: none;
+  margin-left: -18px;
+  color:#fff;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 25px;
+  &:hover {
+    background: #165de0;
+  }
+}
+.jobber-jobs {
+  .services {
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
+    margin: 30px 10px;
+    padding: 5px;
+
+    h3 {
+      color: #484848 !important;
+      font-size: 15px;
+      margin-top: 13px;
+      margin-left: 13px;
+      span {
+        color: #a4a4a4;
+        font-weight: 400;
+        font-size: 13px;
+      }
+      span:before {
+        width: 6px;
+        height: 6px;
+        background: #165de0;
+        border-radius: 100%;
+        content: '.';
+        color: #fff;
+        margin-left: 2px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      span.offline:before {
+        background: #c3c3c3;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+
+      tr {
+        border-bottom: 1px solid #f9f9f9;
+      }
+
+      th, td {
+        padding: 13px;
+      }
+
+      tr:last-child {
+        border-bottom: 1px solid #ffffff;
+      }
+      tr.unavailable {
+        color: #c3c3c3 !important;
+      }
+      .title-row {
+        width: 70%;
+      }
+
+      tr:nth-child(even) {
+        background-color: rgba(216, 216, 216, 0.13);
+      }
+    }
+
+    .accepted {
+      color: #2E5FB7;
+    }
+
+    tr.rejected-row {
+      color: #bdbdbd;
+    }
+  }
+}

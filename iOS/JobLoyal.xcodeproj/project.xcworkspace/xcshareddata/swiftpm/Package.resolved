@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "restful-api",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/sinakhanjani/restful-api",
+      "state" : {
+        "branch" : "Master",
+        "revision" : "844cea0c8be4b2ac9df3c05126e6cc19fceeedc7"
+      }
+    },
+    {
+      "identity" : "stripe-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stripe/stripe-ios",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8584daf880fe93b9b7a7c73c9deaf5f22d2c3e87"
+      }
+    }
+  ],
+  "version" : 2
+}

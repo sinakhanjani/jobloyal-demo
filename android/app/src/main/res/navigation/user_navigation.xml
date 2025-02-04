@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation"
+    app:startDestination="@id/userMainFragment">
+
+    <fragment
+        android:id="@+id/userMainFragment"
+        android:name="com.jobloyal.user.main.UserMainFragment"
+        android:label="UserMainFragment" >
+        <action
+            android:id="@+id/action_userMainFragment_to_jobberPageFragment"
+            app:destination="@id/jobberPageFragment" />
+        <action
+            android:id="@+id/action_userMainFragment_to_userWaitingFragment"
+            app:destination="@id/userWaitingFragment" />
+        <action
+            android:id="@+id/action_userMainFragment_to_userRateFragment"
+            app:destination="@id/userRateFragment" />
+        <action
+            android:id="@+id/action_userMainFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment"
+            app:enterAnim="@anim/anim_slide_in_left"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_right"
+            app:popExitAnim="@anim/anim_slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobberPageFragment"
+        android:name="com.jobloyal.user.jobber_page.JobberPageFragment"
+        android:label="jobber_page_fragment"
+        tools:layout="@layout/jobber_page_fragment" >
+        <action
+            android:id="@+id/action_jobberPageFragment_to_userInvoiceFragment"
+            app:destination="@id/userInvoiceFragment" />
+        <argument
+            android:name="jobberId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="jobId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="jobTitle"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="distance"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument android:name="lat"
+            app:argType="java.lang.Double"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument android:name="lng"
+            app:argType="java.lang.Double"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_jobberPageFragment_to_userCommentFragment"
+            app:destination="@id/userCommentFragment" />
+        <action
+            android:id="@+id/action_jobberPageFragment_to_factorFragment"
+            app:destination="@id/factorFragment" />
+        <action
+            android:id="@+id/action_jobberPageFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInvoiceFragment"
+        android:name="com.jobloyal.user.invoice.UserInvoiceFragment"
+        android:label="user_invoice_fragment"
+        tools:layout="@layout/user_invoice_fragment" >
+        <argument
+            android:name="services"
+            app:argType="com.jobloyal.user.model.jobber.page.JobPageService[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="jobberId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="jobTitle"
+            app:argType="string"
+            app:nullable="true" />
+        <argument android:name="lat"
+            app:argType="java.lang.Double"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument android:name="lng"
+            app:argType="java.lang.Double"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/userWaitingFragment"
+        android:name="com.jobloyal.user.waiting.UserWaitingFragment"
+        android:label="UserWaitingFragment" />
+    <fragment
+        android:id="@+id/userRateFragment"
+        android:name="com.jobloyal.user.raiting.UserRateFragment"
+        android:label="user_rate_fragment"
+        tools:layout="@layout/user_rate_fragment" />
+    <fragment
+        android:id="@+id/userEditProfileFragment"
+        android:name="com.jobloyal.user.profile.edit.UserEditProfileFragment"
+        android:label="UserEditProfileFragment" >
+        <argument
+            android:name="profile"
+            app:argType="com.jobloyal.user.model.profile.UserProfileModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.jobloyal.user.profile.UserProfileFragment"
+        android:label="user_profile_fragment"
+        tools:layout="@layout/user_profile_fragment" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_userEditProfileFragment"
+            app:destination="@id/userEditProfileFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_reservedServicesFragment"
+            app:destination="@id/reservedServicesFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_userMessageFragment"
+            app:destination="@id/userMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userCommentFragment"
+        android:name="com.jobloyal.user.comment.UserCommentFragment"
+        android:label="user_comment_fragment"
+        tools:layout="@layout/user_comment_fragment" >
+        <argument
+            android:name="jobId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="jobberId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservedServicesFragment"
+        android:name="com.jobloyal.user.profile.reserved.ReservedServicesFragment"
+        android:label="ReservedServicesFragment" >
+        <argument
+            android:name="reserved"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMessageFragment"
+        android:name="com.jobloyal.user.profile.message.UserMessageFragment"
+        android:label="UserMessageFragment" >
+        <action
+            android:id="@+id/action_userMessageFragment_to_sendMessageFragment2"
+            app:destination="@id/sendMessageFragment2" />
+        <action
+            android:id="@+id/action_userMessageFragment_to_userSingleMessageFragment"
+            app:destination="@id/userSingleMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendMessageFragment2"
+        android:name="com.jobloyal.jobber.profile.message.send.SendMessageFragment"
+        android:label="send_message_fragment"
+        tools:layout="@layout/send_message_fragment" />
+    <fragment
+        android:id="@+id/userSingleMessageFragment"
+        android:name="com.jobloyal.user.profile.message.UserSingleMessageFragment"
+        android:label="UserSingleMessageFragment" >
+        <argument
+            android:name="message"
+            app:argType="com.jobloyal.jobber.model.message.MessageModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/turnoverFragment2"
+        android:name="com.jobloyal.jobber.profile.turnover.TurnoverFragment"
+        android:label="turnover_fragment"
+        tools:layout="@layout/turnover_fragment" />
+    <fragment
+        android:id="@+id/aboutUsFragment2"
+        android:name="com.jobloyal.aboutus.AboutUsFragment"
+        android:label="about_us_fragment"
+        tools:layout="@layout/about_us_fragment" />
+    <fragment
+        android:id="@+id/termsFragment2"
+        android:name="com.jobloyal.jobber.profile.terms.TermsFragment"
+        android:label="terms_fragment"
+        tools:layout="@layout/terms_fragment" />
+    <fragment
+        android:id="@+id/factorFragment"
+        android:name="com.jobloyal.user.factor.FactorFragment"
+        android:label="FactorFragment" >
+        <argument
+            android:name="totalTimeInterval"
+            app:argType="integer" />
+        <argument
+            android:name="price"
+            app:argType="float" />
+        <argument
+            android:name="serviceTitle"
+            app:argType="string" />
+        <argument
+            android:name="totalPrice"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.jobloyal.user.payment.PaymentFragment"
+        android:label="PaymentFragment" >
+        <argument
+            android:name="payInfo"
+            app:argType="com.jobloyal.user.model.payment.GetPayInfoResultModel"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+</navigation>

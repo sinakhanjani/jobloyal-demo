@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.jobber_page.JobberPageFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                    android:background="?selectableItemBackgroundBorderless"
+                    app:tint="#1E1E1E" />
+
+                <TextView
+                    android:id="@+id/jobTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="#1E1E1E"
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <ViewFlipper
+                    android:id="@+id/waitingFlipper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text=""
+                        android:textColor="@color/blue_500"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true"
+                        app:indicatorColor="@color/error"
+                        app:indicatorSize="20dp"
+                        app:trackThickness="1dp" />
+
+                </ViewFlipper>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar"
+            android:layout_marginTop="?actionBarSize"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/timerBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_500"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:id="@+id/titleRemainingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="we_reserved_jobber_for_3_minute"
+                        android:textColor="#fff "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/may_after_jobber_cancel_your_request"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/remainingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/lato_black"
+                    android:text="121"
+                    android:textColor="#fff"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="4dp">
+
+                        <ViewFlipper
+                            android:id="@+id/avatarFlipper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_dashed_gradient">
+
+
+                                <com.vks.RoundFrameLayout
+                                    android:layout_width="91dp"
+                                    android:layout_height="91dp"
+                                    android:layout_margin="6dp"
+                                    app:rv_backgroundColor="#F5F9FF"
+                                    app:rv_cornerRadius="100dp">
+
+                                    <TextView
+                                        android:id="@+id/nameAvatar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/lato_bold"
+                                        android:text="sk"
+                                        android:textColor="#3B87F0"
+                                        android:textSize="24dp" />
+                                </com.vks.RoundFrameLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_gradient">
+
+
+                                <com.vks.RoundedImageView
+                                    android:id="@+id/avatarImage"
+                                    android:layout_width="91dp"
+                                    android:layout_height="91dp"
+                                    android:layout_margin="6dp"
+                                    android:scaleType="centerCrop"
+                                    app:rv_backgroundColor="#F5F9FF"
+                                    app:rv_isOval="true"
+                                    app:srcCompat="@drawable/sample_avatar" />
+
+                            </FrameLayout>
+                        </ViewFlipper>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="117dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nameTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_bold"
+                                android:textColor="#3B3B3B"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/idTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:textColor="#999999"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/workCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="21_worked"
+                                android:textColor="#939393"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatRatingBar
+                                    android:id="@+id/rateBar"
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:theme="@style/RatingBar"
+                                    android:transformPivotX="0dp"
+                                    android:transformPivotY="0dp" />
+
+                                <TextView
+                                    android:id="@+id/rate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:text="34_3812_comments"
+                                    android:textColor="#B2B2B2"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <com.vks.RoundLinearLayout
+                        android:id="@+id/arrivalTimeBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="8dp"
+                        android:visibility="gone"
+                        app:rv_backgroundColor="#393939"
+                        app:rv_cornerRadius_BR="100dp"
+                        app:rv_cornerRadius_TR="100dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="@string/receive_time"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/arriavalTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/lato_black"
+                            android:paddingRight="10dp"
+                            android:text="1742"
+                            android:textColor="#fff"
+                            android:textSize="16dp" />
+                    </com.vks.RoundLinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="@string/about_me"
+                        android:textColor="#5B5B5B"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/aboutMeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="i finished my university in poland and take my bachlor of computer enginering.
+we don’t get my programming language mark and it’s like a joke."
+                        android:textColor="#444444"
+                        android:textSize="15sp"
+                        app:lineHeight="24dp" />
+
+                    <LinearLayout
+                        android:id="@+id/reservedServiceBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="14dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="@string/reserved_services"
+                            android:textColor="#5B5B5B"
+                            android:textSize="15sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/reservedServiceRC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:nestedScrollingEnabled="false"
+                            tools:itemCount="2"
+                            tools:listitem="@layout/item_reserved_service" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/servicesBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/numericServiceBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="14dp"
+                                android:layout_marginTop="25dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:text="@string/services"
+                                android:textColor="#5B5B5B"
+                                android:textSize="15sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/numericServiceRC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+                                tools:listitem="@layout/item_user_numeric_service_selection" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/timerBaseServiceBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="14dp"
+                                android:layout_marginTop="25dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:text="@string/services_per_hour"
+                                android:textColor="#5B5B5B"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="14dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="@string/only_1_service_can_be_choosen"
+                                android:textColor="#A6A6A6"
+                                android:textSize="13sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/TimeBaseServiceRC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:nestedScrollingEnabled="false"
+                                tools:itemCount="3"
+                                tools:listitem="@layout/item_user_time_base_service" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/commentsBox"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="14dp"
+                            android:layout_marginTop="25dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="@string/comments"
+                            android:textColor="#5B5B5B"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/dashed_gray"
+                            android:orientation="vertical">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/commentRC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:nestedScrollingEnabled="false"
+                                tools:itemCount="3"
+                                tools:listitem="@layout/item_comment" />
+
+                            <com.vks.RoundButton
+                                android:id="@+id/moreButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="7dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:padding="15dp"
+                                app:rv_cornerRadius="10dp"
+                                app:rv_backgroundColor="#fff"
+                                app:rv_backgroundPressColor="#34466EB6"
+                                android:text="@string/more_comments"
+                                android:textColor="@color/blue_button"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <FrameLayout
+
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0"
+                android:visibility="gone">
+
+                <com.dd.ShadowLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sl_dx="0dp"
+                    app:sl_dy="-2dp"
+                    app:sl_shadowColor="#16000000"
+                    app:sl_shadowRadius="5dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    android:paddingHorizontal="21dp"
+                    android:paddingVertical="13dp">
+
+                    <ViewFlipper
+                        android:id="@+id/bottomBarFlipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.vks.RoundFrameLayout
+                            android:id="@+id/nextButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:rv_backgroundColor="@color/blue_500"
+                            app:rv_cornerRadius="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|right"
+                                android:drawableRight="@drawable/ic_right_arrow"
+                                android:drawablePadding="8dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:padding="11dp"
+                                android:text="@string/next"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                app:drawableTint="#fff" />
+
+                            <TextView
+                                android:id="@+id/countSelectedServiceTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="13dp"
+                                android:fontFamily="@font/lato_regular"
+                                android:text="services_select_to_reserve"
+                                android:textColor="#fff" />
+                        </com.vks.RoundFrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <com.vks.RoundTextView
+                                android:id="@+id/nextAndPayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical|right"
+                                android:drawableRight="@drawable/ic_right_arrow"
+                                android:drawablePadding="8dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:padding="11dp"
+                                android:text="@string/next_and_pay"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                app:drawableTint="#fff"
+                                app:rv_backgroundColor="@color/blue_500"
+                                app:rv_cornerRadius="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:text="@string/total"
+                                    android:textColor="@color/blue_500"
+                                    android:textSize="19sp"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    android:id="@+id/total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:text="31500"
+                                    android:textColor="@color/blue_500"
+                                    android:textSize="19sp"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:text="@string/chf"
+                                    android:textColor="@color/blue_500"
+                                    android:textSize="15sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <com.vks.RoundFrameLayout
+                            android:id="@+id/callButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="11dp"
+                            app:rv_backgroundColor="@color/blue_500"
+                            app:rv_cornerRadius="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:drawableLeft="@drawable/ic_call"
+                                android:drawablePadding="8dp"
+                                android:fontFamily="@font/lato_bold"
+                                android:text="@string/call_cap"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                app:drawableTint="#fff" />
+
+                            <TextView
+                                android:id="@+id/phoneNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_bold"
+                                android:text="89_984_4433"
+                                android:textColor="#fff"
+                                android:textSize="19sp" />
+                        </com.vks.RoundFrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha="0.65"
+                            android:drawablePadding="8dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="@string/doing"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <com.vks.RoundTextView
+                            android:id="@+id/verifyButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/lato_bold"
+                            android:gravity="center"
+                            android:text="@string/verify_pay_the_price_to_jobber"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            app:rv_backgroundColor="#20A613"
+                            app:rv_cornerRadius="10dp" />
+
+                    </ViewFlipper>
+
+                </FrameLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

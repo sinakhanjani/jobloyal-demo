@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Rejeter"; ObjectID = "DBM-bx-C9O"; */
+"DBM-bx-C9O.normalTitle" = "Rejeter";
+
+/* Class = "UIButton"; normalTitle = "Next (84CHF)"; ObjectID = "DmY-Yc-zO1"; */
+"DmY-Yc-zO1.normalTitle" = "Next (84CHF)";
+
+/* Class = "UILabel"; text = "Rue de Rovio"; ObjectID = "IpN-Ht-eIb"; */
+"IpN-Ht-eIb.text" = "Rue de Rovio";
+
+/* Class = "UILabel"; text = "CHF"; ObjectID = "KV0-9g-0dA"; */
+"KV0-9g-0dA.text" = "CHF";
+
+/* Class = "UILabel"; text = "41.1 KM"; ObjectID = "bIz-wo-cCe"; */
+"bIz-wo-cCe.text" = "41.1 KM";
+
+/* Class = "UILabel"; text = "Cleaning Home"; ObjectID = "bqI-t5-j5g"; */
+"bqI-t5-j5g.text" = "Cleaning Home";
+
+/* Class = "UILabel"; text = "158"; ObjectID = "wC7-5z-E7M"; */
+"wC7-5z-E7M.text" = "158";
+
+/* Class = "UILabel"; text = "Services"; ObjectID = "xSb-FJ-AA4"; */
+"xSb-FJ-AA4.text" = "Services";

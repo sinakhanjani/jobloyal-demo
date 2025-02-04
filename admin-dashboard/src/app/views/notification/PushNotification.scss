@@ -1,0 +1,74 @@
+.push_message {
+
+  input {
+    font-size: 15px;
+  }
+  input:focus {
+    outline-width: 0;
+  }
+  textarea {
+    resize: vertical;
+    font-size: 14px;
+  }
+  textarea:focus {
+    outline-width: 0;
+  }
+  .content-box {
+    width: 68%;
+  }
+  .title-input {
+    width: 100%;
+    padding: 9px;
+    border: none;
+  }
+  .right-end {
+    margin-top: 10px;
+    float: right;
+    display: inline-block;
+  }
+  .send-button {
+    background: #1F6AE0;
+
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 16px;
+
+    cursor: pointer;
+  }
+}
+
+.white-box {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #EFEFEF;
+  padding: 5px;
+
+  .grid-files {
+    display: flex;
+    .file-tag {
+      background: #EFEFEF;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      margin-left: 9px;
+      padding-left: 15px;
+      padding-right: 0;
+      .del {
+        cursor: pointer;
+        display: flex;
+        padding: 10px;
+        background: #e0e0e0;
+        border-radius: 30px;
+        margin-left: 6px;
+        &:hover {
+          background: #DF5252;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+.white-box > textarea {
+  min-height: 340px;
+}

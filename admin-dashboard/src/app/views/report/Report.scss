@@ -1,0 +1,77 @@
+.report-container {
+  padding: 40px 40px;
+
+  .soft-shadow-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    margin-top: 50px;
+    background: #ffffff;
+    box-shadow: 1px 1px 6px 0px #e2e2e2;
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+
+  .chart-box {
+    margin-top: 50px;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    width: 45%;
+    h3 {
+      font-size: 19px;
+      color: #2E2E2E !important;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #898989;
+      padding: 0;
+      margin: 5px 0 20px 0;
+    }
+  }
+
+  .jobber-list {
+    padding: 0px 30px;
+
+    .jobber-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.16);
+
+      img {
+        border-radius: 100%;
+        height: 4em;
+        width: 4em;
+      }
+
+      .arrow-item {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        span {
+          color: #5E5E5E;
+          font-size: 16px;
+        }
+      }
+
+      .jobber-item-detail {
+        margin-left: 20px;
+      }
+
+      .jobber-name {
+        font-size: 17px;
+        color: #2E2E2E;
+      }
+
+      .jobber-meta {
+        color: #898989;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="25dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_reserved_service"
+        android:layout_gravity="center_vertical"
+        app:tint="#464646"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:text="Payment"
+        android:id="@+id/title"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:drawableRight="@drawable/ic_go_to_next"
+        android:paddingVertical="19dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>

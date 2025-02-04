@@ -1,0 +1,96 @@
+//
+//  EmptyRequestInboxView.swift
+//  JobLoyal
+//
+//  Created by Sina khanjani on 3/6/1400 AP.
+//
+
+import UIKit
+
+class EmptyRequestInboxView: UIView {
+    
+    let inboxImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(systemName: "archivebox")!)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.backgroundColor = .clear
+        imageView.tintColor = UIColor.label
+        
+        return imageView
+    }()
+    
+    
+    let bgView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .secondarySystemGroupedBackground
+        view.cornerRadius = 18
+        
+        return view
+    }()
+    
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .label
+        label.font = UIFont.avenirNextMedium(size: 24)
+        label.cornerRadius = 18
+        label.numberOfLines = 1
+        label.text = "No Request Here".localized()
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    let descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .secondaryLabel
+        label.font = UIFont.avenirNextMedium(size: 17)
+        label.cornerRadius = 18
+        label.numberOfLines = 3
+        label.text = "You can add service to increase your chance to get requests".localized()
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = .clear
+        
+        addSubview(bgView)
+        bgView.addSubview(inboxImageView)
+        bgView.addSubview(titleLabel)
+        bgView.addSubview(descriptionLabel)
+        
+        NSLayoutConstraint.activate([
+            // bgView constraint:
+            bgView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0),
+            bgView.leftAnchor.constraint(equalTo: leftAnchor, constant: 16),
+            bgView.rightAnchor.constraint(equalTo: rightAnchor, constant: -16),
+            bgView.heightAnchor.constraint(equalToConstant: 240),
+            
+            // inboxImageView constraint:
+            inboxImageView.topAnchor.constraint(equalTo: bgView.topAnchor, constant: 32),
+            inboxImageView.centerXAnchor.constraint(equalTo: bgView.centerXAnchor, constant: 0),
+            inboxImageView.widthAnchor.constraint(equalToConstant: 54),
+            inboxImageView.heightAnchor.constraint(equalToConstant: 54),
+            
+            // titleLabel constraint:
+            titleLabel.leftAnchor.constraint(equalTo: bgView.leftAnchor, constant: 16),
+            titleLabel.rightAnchor.constraint(equalTo: bgView.rightAnchor, constant: -16),
+            titleLabel.topAnchor.constraint(equalTo: inboxImageView.bottomAnchor, constant: 8),
+            titleLabel.heightAnchor.constraint(equalToConstant: 32),
+            
+            // descriptionLabel constailet
+            descriptionLabel.leftAnchor.constraint(equalTo: bgView.leftAnchor, constant: 16),
+            descriptionLabel.rightAnchor.constraint(equalTo: bgView.rightAnchor, constant: -16),
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            descriptionLabel.heightAnchor.constraint(equalToConstant: 80),
+        ])
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+}

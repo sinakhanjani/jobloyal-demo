@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".jobber.detail.RequestDetailFragment">
+
+    <ImageView
+        android:id="@+id/backgroundMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:minHeight="150dp">
+
+            <com.dd.ShadowLayout
+                android:id="@+id/shadowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="9dp"
+                android:layout_marginTop="0dp"
+                app:sl_cornerRadius="18dp"
+                app:sl_dx="0dp"
+                app:sl_dy="1dp"
+                app:sl_shadowColor="#2C000000"
+                app:sl_shadowRadius="3dp">
+
+                <com.vks.RoundFrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="22dp"
+                    app:rv_backgroundColor="#fff"
+                    app:rv_cornerRadius_TR="18dp"
+                    app:rv_cornerRadius_TL="18dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/world_map" />
+                    <LinearLayout
+                        android:id="@+id/customerName"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_bold"
+                            android:paddingHorizontal="25dp"
+                            android:text="mohammad_fallah"
+                            android:textColor="#646464"
+                            android:textSize="19sp" />
+                        <com.vks.RoundButton
+                            android:id="@+id/callButton"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:rv_backgroundColor="#EDF2FB"
+                            app:rv_backgroundPressColor="#D1DEF6"
+                            app:rv_cornerRadius="100dp"
+                            android:text="@string/call"
+                            android:textColor="@color/blue_700"
+                            android:paddingVertical="8dp"
+                            android:paddingHorizontal="17dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="18sp"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/ic_call"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="25dp">
+
+                            <LinearLayout
+                                android:id="@+id/askText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/askTitleTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_bold"
+                                    android:text="ask_mohammad_fallah"
+                                    android:textColor="@color/blue_700"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/askContentTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:fontFamily="@font/lato_regular"
+                                    android:lineHeight="24dp"
+                                    android:text="ask_mohammad_fallah_to_open_the_jobloyal_and_verify_your_job_to_get_the_mony_on_your_wallet"
+                                    android:textColor="#494949"
+                                    android:textSize="15sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="#F6F6F6" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/staticsBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/timeTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/lato_bold"
+                                        android:text="1419"
+                                        android:textColor="#3D3D3D"
+                                        android:textSize="34sp" />
+
+                                    <TextView
+                                        android:id="@+id/label"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:fontFamily="@font/lato_bold"
+                                        android:text="@string/arrivalTime"
+                                        android:textColor="#3D3D3D"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ViewFlipper
+                                    android:id="@+id/timeBaseViewFlipper"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+
+
+                                    <LinearLayout
+                                        android:layout_gravity="right"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/lato_regular"
+                                            android:text="@string/based_on"
+                                            android:textColor="#252525"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/lato_bold"
+                                            android:text="@string/time"
+                                            android:textColor="#252525"
+                                            android:textSize="28sp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:gravity="left"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/priceTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/lato_bold"
+                                                android:text="8400"
+                                                android:textColor="#3D3D3D"
+                                                android:textSize="30sp" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/lato_regular"
+                                                android:text="@string/chf"
+                                                android:layout_marginLeft="4dp"
+                                                android:textColor="#3D3D3D"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/lato_bold"
+                                            android:text="@string/paied"
+                                            android:textColor="#3D3D3D"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </ViewFlipper>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="20dp"
+                                    tools:itemCount="0"
+                                    tools:listitem="@layout/item_accepted_service" />
+
+                                <LinearLayout
+                                    android:id="@+id/locationBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="25dp"
+                                        android:orientation="horizontal">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            app:srcCompat="@drawable/ic_location" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/address"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="3dp"
+                                                android:alpha="0.57"
+                                                android:fontFamily="@font/lato_bold"
+                                                android:text="rue_de_rivoli"
+                                                android:textColor="@color/black"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/distance"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="3dp"
+                                                android:fontFamily="@font/lato_regular"
+                                                android:text="13_km"
+                                                android:textSize="13sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginHorizontal="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="15dp">
+
+                                        <FrameLayout
+                                            android:id="@+id/map"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                        <ImageView
+                                            android:id="@+id/mapClicked"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="fitXY"
+                                            app:srcCompat="@drawable/ic_shape_radius" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/finishBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/totalTime"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/lato_bold"
+                                            android:text="019"
+                                            android:textColor="#3D3D3D"
+                                            android:textSize="34sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/lato_bold"
+                                            android:text="@string/total_time"
+                                            android:textColor="#3D3D3D"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <Space
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left"
+                                        android:layout_gravity="center_vertical"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:id="@+id/totalIncome"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/lato_bold"
+                                                android:text="8400"
+                                                android:textColor="#3D3D3D"
+                                                android:textSize="30sp" />
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/lato_regular"
+                                                android:text="@string/chf"
+                                                android:layout_marginLeft="4dp"
+                                                android:textColor="#3D3D3D"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:id="@+id/income"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:fontFamily="@font/lato_bold"
+                                            android:text="@string/income"
+                                            android:textColor="#3D3D3D"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+                    </LinearLayout>
+
+                </com.vks.RoundFrameLayout>
+            </com.dd.ShadowLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="-17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/mainButtonFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.vks.RoundButton
+                    android:id="@+id/mainButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="17dp"
+                    android:text="@string/i_arrive_near_home"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    app:rv_backgroundColor="@color/blue_700"
+                    app:rv_backgroundPressColor="#252525" />
+
+                <FrameLayout
+                    android:background="@color/disabled_button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:layout_gravity="center"
+                        app:trackThickness="1dp"
+                        app:indicatorSize="34dp"
+                        app:indicatorColor="#fff"
+                        />
+                </FrameLayout>
+
+            </ViewFlipper>
+
+
+            <com.vks.RoundButton
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:paddingVertical="16dp"
+                android:text="@string/cancel"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:rv_cornerRadius_BL="18dp"
+                app:rv_cornerRadius_BR="18dp"
+                app:rv_backgroundColor="#383838"
+                app:rv_backgroundPressColor="#252525" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

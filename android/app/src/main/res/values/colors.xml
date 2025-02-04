@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_200">#4483F5</color>
+    <color name="blue_500">#3B87F0</color>
+    <color name="blue_700">#1A5BD1</color><!-- this color used for jobber-->
+    <color name="blue_900">#382BE7</color><!-- this color for gradient with blue_500-->
+    <color name="blue_button">#466EB6</color><!-- this color for some button like register and save in jobber app-->
+    <color name="blue_button_pressed">#3961A8</color><!-- this color for some button like register and save in jobber app-->
+    <color name="disabled_button_background">#A3A3A3</color>
+    <color name="error">#E4102F</color>
+    <color name="teal_200">#466EB6</color>
+    <color name="teal_700">#382BE7</color>
+    <color name="black">#FF000000</color>
+    <color name="grayBlack">#474747</color>
+    <color name="offlineButton">#3D3C3C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navColor">#F5F5F5</color>
+</resources>

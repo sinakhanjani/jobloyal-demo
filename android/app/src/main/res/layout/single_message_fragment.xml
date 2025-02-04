@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jobber.profile.message.single.SingleMessageFragment">
+
+    <View
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                android:background="?selectableItemBackgroundBorderless"
+                app:tint="#1E1E1E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/messages"
+                android:textColor="#1E1E1E"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subjectTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:lineHeight="25dp"
+                android:paddingHorizontal="25dp"
+                android:text="Receive income from jobloyal"
+                android:textColor="#3F3F3F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dateOfQuestionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:alpha="0.75"
+                android:fontFamily="@font/lato_regular"
+                android:lineHeight="25dp"
+                android:paddingHorizontal="25dp"
+                android:text="13-09-2021"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/descriptionTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/lato_regular"
+                android:lineHeight="23dp"
+                android:paddingHorizontal="25dp"
+                android:text="how we can receive our income monthly and other people daily receives?"
+                android:textColor="#474747"
+                android:textSize="16sp" />
+
+            <com.vks.RoundLinearLayout
+                android:id="@+id/answerBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="17dp"
+                android:orientation="vertical"
+                android:paddingVertical="15dp"
+                app:rv_backgroundColor="#F8F8F8"
+                app:rv_cornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:lineHeight="25dp"
+                    android:paddingHorizontal="25dp"
+                    android:text="Answer"
+                    android:textColor="#52B584"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:lineHeight="23dp"
+                    android:paddingHorizontal="25dp"
+                    android:text="you can go to profile -> payment and change your period payment to Monthly\n\ngood luck"
+                    android:textColor="#426B57"
+                    android:textSize="16sp" />
+            </com.vks.RoundLinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

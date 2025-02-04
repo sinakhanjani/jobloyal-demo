@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RestfulAPI",
+        "repositoryURL": "https://bitbucket.org/sinakhanjani/restful-api",
+        "state": {
+          "branch": "Master",
+          "revision": "3a2058b7ed97f63eb671a2855fe0f9fce3e6956a",
+          "version": null
+        }
+      },
+      {
+        "package": "Stripe",
+        "repositoryURL": "https://github.com/stripe/stripe-ios",
+        "state": {
+          "branch": "master",
+          "revision": "c4c9edabd6831218723a2c7edda2c7d2908106aa",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.jobloyal.login.intro.IntroFragment"
+        android:label="IntroFragment" >
+        <action
+            android:id="@+id/action_introFragment_to_whoAreYouFragment"
+            app:destination="@id/whoAreYouFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whoAreYouFragment"
+        android:name="com.jobloyal.login.whoareu.WhoAreYouFragment"
+        android:label="WhoAreYouFragment" >
+        <action
+            android:id="@+id/action_whoAreYouFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.jobloyal.login.phonenumber.PhoneNumberFragment"
+        android:label="phone_number_fragment"
+        tools:layout="@layout/phone_number_fragment" >
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_loginVerificationFragment"
+            app:destination="@id/loginVerificationFragment" />
+        <argument
+            android:name="isJobberApp"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginVerificationFragment"
+        android:name="com.jobloyal.login.verification.LoginVerificationFragment"
+        android:label="LoginVerificationFragment" >
+        <action
+            android:id="@+id/action_loginVerificationFragment_to_registerJobberFragment"
+            app:destination="@id/registerJobberFragment" />
+        <argument
+            android:name="isJobberApp"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_loginVerificationFragment_to_userRegisterFragment"
+            app:destination="@id/userRegisterFragment"
+            app:popUpTo="@id/whoAreYouFragment" />
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerJobberFragment"
+        android:name="com.jobloyal.login.register.jobber.RegisterJobberFragment"
+        android:label="register_jobber_fragment"
+        tools:layout="@layout/register_jobber_fragment" >
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegisterFragment"
+        android:name="com.jobloyal.login.register.user.UserRegisterFragment"
+        android:label="user_register_fragment"
+        tools:layout="@layout/user_register_fragment" >
+        <argument android:name="token"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsFragment3"
+        android:name="com.jobloyal.jobber.profile.terms.TermsFragment"
+        android:label="terms_fragment"
+        tools:layout="@layout/terms_fragment" />
+</navigation>
