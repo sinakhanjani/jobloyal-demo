@@ -37,12 +37,8 @@ Jobloyal is a real-time home services marketplace application, available for bot
 
 ## 📸 Screenshots
 
-![📸 Screenshot 1](./mnt/1.jpg)
-![📸 Screenshot 2](./mnt/2.jpg)
-![📸 Screenshot 3](./mnt/3.jpg)
-![📸 Screenshot 4](./mnt/4.jpg)
-![📸 Screenshot 5](./mnt/5.jpg)
-![📸 Screenshot 6](./mnt/6.jpg)
+![📸 Screenshot 1](./mnt/sc4-01.png)
+![📸 Screenshot 2](./mnt/sc4-02.png)
 
 ## 📜 License
 This project is for demonstration purposes only and is not intended for production use.
